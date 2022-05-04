@@ -4,10 +4,638 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="indexfiles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a53f968ed6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Online Pharmacy India | India's most trusted pharmacy</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
-    <h1>1gm</h1>
-    <h2>Homepge.html</h2>
+    <!-- NAVBAR STARTS HERE. NAVBAR STARTS HERE. NAVBAR STARTS HERE -->
+    <div class="navbar">
+        <div class="navleft">
+            <div>
+                <img src="images/logo.png" alt="Tata 1mg logo">
+            </div>
+
+            <div class="links">
+                <a style="color: #FF6F61;" href="">MEDICINES</a>
+                <a href="">LAB TESTS</a>
+                <a href="">ASK DOCTOR</a>
+                <a href="">COVID-19</a>
+                <a href="">AYURVEDA</a>
+                <a href="">CARE PLAN</a>
+            </div>
+        </div>
+
+        <div class="navright">
+            <a href="">Login</a>
+            <a href="">Sign Up</a>
+            <a href="">Offers</a>
+            <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="">Need Help?</a>
+        </div>
+    </div>
+    
+    <!-- NAVBAR ENDS HERE. NAVBAR ENDS HERE. NAVBAR ENDS HERE -->
+
+    <!-- SEARCH BAR STARTS HERE. SEARCH BAR STARTS HERE. SEARCH BAR STARTS HERE. -->
+    <div class="searchdiv">
+        <div class="location-btn">
+            <button onclick="getLoc()"><i class="fa-solid fa-location-dot"></i><span id="changecity">Get Location</span><i class="fa-solid fa-location-crosshairs"></i></button>
+            <input type="text" placeholder="Search for Medicines and Health Products"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="upload-btn">
+            <p><span><i class="fa-solid fa-bolt"></i></span> QUICK BUY! Flat 25% off*</p>
+            <button>Upload</button>
+        </div>
+    </div>
+    <!-- SEARCH BAR ENDS  -->
+
+    <!-- DROPDOWN BOOTSTRAP STARTS HERE  -->
+    <div class="drpdwn">
+        <div  class="dropdown">
+            <button id="drop-btn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Health Resource Center
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">All Diseases</a></li>
+              <li><a class="dropdown-item" href="#">All Medicines</a></li>
+              <li><a class="dropdown-item" href="#">Medicines by Therapeutic class</a></li>
+            </ul>
+          </div>
+
+
+          <div  class="dropdown">
+            <button id="drop-btn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Covid Essentials
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Covid-19 Self test kits</a></li>
+              <li><a class="dropdown-item" href="#">Oxygen Cans</a></li>
+              <li><a class="dropdown-item" href="#">Mask & Sanitizers</a></li>
+              <li><a class="dropdown-item" href="#">Support Your Immunity</a></li>
+              <li><a class="dropdown-item" href="#">Thermometers</a></li>
+            </ul>
+          </div>
+
+          <div  class="dropdown">
+            <button id="drop-btn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Featured
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Tata 1mg Health Products</a></li>
+              <li><a class="dropdown-item" href="#">Summer Essentials</a></li>
+              <li><a class="dropdown-item" href="#">Trending Now</a></li>
+              <li><a class="dropdown-item" href="#">New Arrival on Tata 1mg</a></li>
+              <li><a class="dropdown-item" href="#">Buy More, save More</a></li>
+              <li><a class="dropdown-item" href="#">Combos</a></li>
+            </ul>
+          </div>
+
+          <div  class="dropdown">
+            <button id="drop-btn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Vitamins & Nutrition
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Vitamins & Supplements</a></li>
+              <li><a class="dropdown-item" href="#">Nutrition Drinks</a></li>
+              <li><a class="dropdown-item" href="#">Health Food and Drinks</a></li>
+              <li><a class="dropdown-item" href="#">Protein Supplements</a></li>
+              <li><a class="dropdown-item" href="#">Omega & Fish Oils</a></li>
+              <li><a class="dropdown-item" href="#">Immunity Boosters</a></li>
+              <li><a class="dropdown-item" href="#">Weight Management</a></li>
+            </ul>
+          </div>
+
+
+          <div  class="dropdown">
+            <button id="drop-btn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Healthcare Devices
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Masks</a></li>
+              <li><a class="dropdown-item" href="#">Oxygen</a></li>
+              <li><a class="dropdown-item" href="#">BP Monitors</a></li>
+              <li><a class="dropdown-item" href="#">Nebulizers & Vaporizers</a></li>
+              <li><a class="dropdown-item" href="#">Oximeter & Pedometers</a></li>
+              <li><a class="dropdown-item" href="#">Thermometers</a></li>
+              <li><a class="dropdown-item" href="#">Body Massager</a></li>
+            </ul>
+          </div>
+
+
+          <div  class="dropdown">
+            <button id="drop-btn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Personal Care
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Men Care</a></li>
+              <li><a class="dropdown-item" href="#">Women Care</a></li>
+              <li><a class="dropdown-item" href="#">Baby Care</a></li>
+              <li><a class="dropdown-item" href="#">Skin Care</a></li>
+              <li><a class="dropdown-item" href="#">Hair Care</a></li>
+              <li><a class="dropdown-item" href="#">Oral Care</a></li>
+              <li><a class="dropdown-item" href="#">Elderly Care</a></li>
+              <li><a class="dropdown-item" href="#">Sexual Wellness</a></li>
+            </ul>
+          </div>
+
+
+          <div  class="dropdown">
+            <button id="drop-btn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Ayurveda Products
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Top Ayurveda Products</a></li>
+              <li><a class="dropdown-item" href="#">Health Concern</a></li>
+              <li><a class="dropdown-item" href="#">Top Brands</a></li>
+              <li><a class="dropdown-item" href="#">Popular Categories</a></li>
+            </ul>
+          </div>
+
+
+          <div  class="dropdown">
+            <button id="drop-btn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Homeopathy
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Homeopathy Top Brands</a></li>
+              <li><a class="dropdown-item" href="#">SBL Homoeopathy</a></li>
+              <li><a class="dropdown-item" href="#">Homeopathy Popular Categories</a></li>
+              <li><a class="dropdown-item" href="#">Homeopathy Wellness Combos</a></li>
+            </ul>
+          </div>
+
+    </div>
+    <!-- DROPDOWN BOOTSTRAP Ends HERE  -->
+    <!-- carousel starts  -->
+    <div class="c-main">
+        <div class="c">
+
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/4.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/5.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+
+
+
+        </div>
+        <div class="fixed">
+            <img src="images/fixed.png" alt="">
+        </div>
+    </div>
+    <!-- carousel ends  -->
+    <div class="slogan">
+        Tata 1mg: India’s Leading Online Pharmacy & Healthcare Platform
+    </div>
+
+    <div style="border-bottom: none;" class="care-plan">
+        <img class="careplanimg" src="images/careplan.png" alt="">
+        <!-- <div>
+            <div>Full body health checkups</div>
+            <button>SEE ALL</button>
+        </div> -->
+    </div>
+
+
+    <!-- products divs starts from here  -->
+    <!-- brands  -->
+    <div class="care-plan">
+      <div>
+          <div>Featured brands</div>
+          <button>SEE ALL</button>
+      </div>
+  </div>
+
+  <div class="products">
+    <div>
+      <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1651466348/fhl1abhofuq8nzow12ps.png" alt="">
+      <p>Zandu</p>
+    </div>
+    <div>
+      <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1651554161/k0xnfc7pdapwmhnmsjti.png" alt="">
+      <p>Cetaphil</p>
+    </div>
+    <div>
+      <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1651554179/wkzlh0dk04vl5shnvrwv.png" alt="">
+      <p>Dabur</p>
+    </div>
+    <div>
+      <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1651554197/avs2twg8tsqvi7ez4lri.png" alt="">
+      <p>Organic India</p>
+    </div>
+    <div>
+      <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1651554213/szhdmpfsxiidab1g8pb6.png" alt="">
+      <p>HealthVit</p>
+    </div>
+    <div>
+      <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1651554229/mplztxor7cbms89ggqaa.png" alt="">
+      <p>Contour</p>
+    </div>
+  </div>
+
+  <!-- popular categories  -->
+  <div class="care-plan">
+    <div>
+        <div>Popular categories</div>
+        <button>SEE ALL</button>
+    </div>
+</div>
+
+<div class="products">
+  <div>
+    <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525284/cabpuknnlyyzgqfnb4x5.png" alt="">
+    <p>Vitamins & Supplements</p>
+  </div>
+  <div>
+    <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1649141994/x2z8u1osqutmxvx56hlw.png" alt="">
+    <p>Ayurveda</p>
+  </div>
+  <div>
+    <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525147/qjfdkz5njmk9n7vvrbb3.png" alt="">
+    <p>Healthcare Devices</p>
+  </div>
+  <div>
+    <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1642586423/uq1gwxslqqrxxwv6zi6j.jpg" alt="">
+    <p>Nutritional Drinks</p>
+  </div>
+  <div>
+    <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525320/j7ruar88gacbzksuadjn.png" alt="">
+    <p>Homeopathy</p>
+  </div>
+  <div>
+    <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525219/tfrtydrq6uzeyb42gh08.png" alt="">
+    <p>Diabetes Care</p>
+  </div>
+</div>
+
+<!-- top seller from healthvit  -->
+<div class="care-plan">
+  <div>
+      <div>Top Sellers From Healthvit</div>
+      <button>SEE ALL</button>
+  </div>
+</div>
+
+<div class="products">
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600767666/cropped/vy7omzxieyisfu4sehn9.jpg" alt="">
+  <p>HealthVit Keto Fat Burner Capsule</p>
+  <span class="rating">4.4/5</span>
+  <h6>₹1125</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601232336/cropped/cojrtmk74ajkg3sfbikx.png" alt="">
+  <p>HealthVit C-Vitan Natural Vitamin C</p>
+  <span class="rating">3.4/5</span>
+  <h6>₹252</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1633092673/mqfocyu5rjzv0saptnlh.jpg" alt="">
+  <p>HealthVit Omega 3 Fish Oil 1000mg Softgel</p>
+  <span class="rating">4.3/5</span>
+  <h6>₹583</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1613501787/xfiayqtoofqahefnpfoq.jpg" alt="">
+  <p>HealthVit Cenvitan Women Multivitamin</p>
+  <span class="rating">4.7/5</span>
+  <h6>₹401</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600172283/cropped/baifswerx176fr98htej.jpg" alt="">
+  <p>HealthVit Multivit Multivitamin Tablets</p>
+  <span class="rating">4.0/5</span>
+  <h6>₹284</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601297476/vzkfjqf8wpgvnughy8ph.jpg" alt="">
+  <p>HealthVit Zinc Gluconate 50mg Tablets</p>
+  <span class="rating">4.1/5</span>
+  <h6>₹516</h6>
+</div>
+</div>
+
+<!-- Tata 1mg health products  -->
+<div class="care-plan">
+  <div>
+      <div>Tata 1mg health products</div>
+      <button>SEE ALL</button>
+  </div>
+</div>
+
+<div class="products">
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1650454451/pq9kpnup8oubjoihzhmw.jpg" alt="">
+  <p>Tata 1mg Blood Pressure Monitor</p>
+  <span class="rating">4.7/5</span>
+  <h6>₹1386</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1637324363/asydocau7dvbzayxel1u.jpg" alt="">
+  <p>Tata 1mg CoQ Tablet 99% Ubiquinone</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹448</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1650436845/v1rvnzqllbl7lioxslds.jpg" alt="">
+  <p>Tata 1mg Compressor Nebulizer</p>
+  <span class="rating">4.7/5</span>
+  <h6>₹1467</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1649963382/f6t1ibz3qh3ag0o486xv.jpg" alt="">
+  <p>Tata 1mg Immunity & Wellness Supplement</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹89</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1651087844/ehhaun1dp1zj2ytc3yws.jpg" alt="">
+  <p>Tata 1mg Digital Thermometer</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹95</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645272788/qh1au45w8u7cfvf3lg3i.jpg" alt="">
+  <p>Tata 1mg Women's Nutritional Drink</p>
+  <span class="rating">4.2/5</span>
+  <h6>₹448</h6>
+</div>
+</div>
+
+<!-- flash deals  -->
+<div class="care-plan">
+  <div>
+      <div>Flash Deals</div>
+      <button>SEE ALL</button>
+  </div>
+</div>
+
+<div class="products">
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601000106/cropped/tlmrmfmizfwwgpr4kvt2.png" alt="">
+  <p>Celevida Kesar Elaichi Health Drink</p>
+  <span class="rating">4.7/5</span>
+  <h6>₹607</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640110655/d6f12cxsudhkjamlbz0c.jpg" alt="">
+  <p>Dr. Morepen Omega 3 Deep Sea Fish Oil</p>
+  <span class="rating">4.5/5</span>
+  <h6>₹736</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1634636649/k3m0voravbx7kf4lrlqx.jpg" alt="">
+  <p>Catephil Gentle Skin Cleanser</p>
+  <span class="rating">4.4/5</span>
+  <h6>₹259</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090007/cropped/chesipqujcvcsuy1m8iw.jpg" alt="">
+  <p>Shelcal 500mg Vitamin D3 Tablet</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹98</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1603182454/pc0kfczcu5phbkk5sy41.jpg" alt="">
+  <p>Dr. Morepen Blood Glucose Monitor</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹611</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090672/cropped/zulvh6fdr7bukuu18zhq.jpg" alt="">
+  <p>Accu-Check Active Blood Glucose Test Strip</p>
+  <span class="rating">4.3/5</span>
+  <h6>₹858</h6>
+</div>
+</div>
+
+<!-- health concern  -->
+<div class="care-plan">
+  <div>
+      <div>Shop by Health Concerns</div>
+      <button>SEE ALL</button>
+  </div>
+</div>
+
+<div class="products">
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524227/hgzkyio2rphkn6wjif94.png" alt="">
+  <p>Diabetes Care</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524269/zo7sc14nqpt6ebeojkvr.png" alt="">
+  <p>Cardiac Care</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524293/ttagxlnxulsvkyv9fetr.png" alt="">
+  <p>Stomach Care</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524308/ijgn7fhyq8ig0welmrcp.png" alt="">
+  <p>Liver Care</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524282/zytsldnf5mvb0u19ydep.png" alt="">
+  <p>Kidney Care</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524252/hn5bpr1ci2do5kdub51v.png" alt="">
+  <p>Pain Relief</p>
+</div>
+</div>
+
+<!-- trendiing now  -->
+<div class="care-plan">
+  <div>
+      <div>Trending Now</div>
+      <button>SEE ALL</button>
+  </div>
+</div>
+
+<div class="products">
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600137906/cropped/ckrjzacxu5okokbtdgku.jpg" alt="">
+  <p>Dabur Pudin hara Pearls Strip</p>
+  <span class="rating">4.5/5</span>
+  <h6>₹24</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1619726560/ugzlvtqh0pchrv4aksi5.jpg" alt="">
+  <p>Colgate Maxfresh Plax Mouth Wash</p>
+  <span class="rating">4.5/5</span>
+  <h6>₹243</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600842606/cropped/mrven0kafwshqufwe6e7.jpg" alt="">
+  <p>Himalaya Baby Powder 700gm</p>
+  <span class="rating">4.5/5</span>
+  <h6>₹315</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1632981764/noekunzlypna6hkheoft.jpg" alt="">
+  <p>Dabur Hajmola Imli Flavour Tablets</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹42</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645466994/tz0wequkkxtcyapsavgv.jpg" alt="">
+  <p>Glucon-D Instant Energy Health Drink</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹310</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1613566715/w84792bbroguuvsqyyh8.jpg" alt="">
+  <p>Horlicks Health and Nutrition Drink</p>
+  <span class="rating">4.8/5</span>
+  <h6>₹199</h6>
+</div>
+</div>
+
+<!-- popular combo deals  -->
+<div class="care-plan">
+  <div>
+      <div>Popular Combo Deals</div>
+      <button>SEE ALL</button>
+  </div>
+</div>
+
+<div class="products">
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1648730308/pfqnfyojsqwtn6hrce32.jpg" alt="">
+  <p>Combo Pack of Sri Sri Tattva Tulasi Arka & Giloy</p>
+  <span class="rating">4.5/5</span>
+  <h6>₹194</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1613386948/frivljebqevwdptjkodu.jpg" alt="">
+  <p>Nivea Lite Moisturiser & 1mg Face Wash</p>
+  <span class="rating">4.5/5</span>
+  <h6>₹270</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1602583485/qir6i2zlhzeddxa4mqt0.jpg" alt="">
+  <p>Combo of 1mg Panch Tulsi & Patanjali Giloy Ghanvati</p>
+  <span class="rating">4.5/5</span>
+  <h6>₹260</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601161815/cropped/zolg3xv8s5klfpfqzoil.jpg" alt="">
+  <p>Safola Oats 1kg with 400gm Free</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹213</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1648730563/dkublfwyo18topo38fr0.jpg" alt="">
+  <p>Combo Pack of Sri Sri Jamun Juice & 1mg Diabetes Nutrition Mix</p>
+  <span class="rating">4.6/5</span>
+  <h6>₹774</h6>
+</div>
+<div>
+  <img class="imgbig" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1606819453/cr9a2p0evnuzwvw5ksp1.jpg" alt="">
+  <p>Combo of Cetaphil Oily Skin Cleanser & Klm Klin Face Wash</p>
+  <span class="rating">4.8/5</span>
+  <h6>₹675</h6>
+</div>
+</div>
+
+<!-- health food and drinks  -->
+<div class="care-plan">
+  <div>
+      <div>Health food & drinks</div>
+      <button>SEE ALL</button>
+  </div>
+</div>
+
+<div class="products">
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1626676531/vuze6xhdat3watvwaro9.png" alt="">
+  <p>Green & Herbal Tea</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1626676387/rxqxi3eybpds7l8mymrt.png" alt="">
+  <p>Apple Cider Vinegar</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1626676417/odov6fsbhdgwfnqnqmyf.jpg" alt="">
+  <p>Breakfast Cereals</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1626676562/rstb8fbortn6f868mznd.png" alt="">
+  <p>Herbal Juices</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1626676595/rqsyo0zfof2bkupt6q0g.jpg" alt="">
+  <p>Nutritional Drinks</p>
+</div>
+<div>
+  <img src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1626676506/jvqtphggru8juyrasmj8.png" alt="">
+  <p>Dry Fruits</p>
+</div>
+</div>
+
+<!-- AYURVEDA AYURVEDA  -->
+<div class="care-plan">
+  <div>
+      <div>Ayurveda</div>
+      <button>SEE ALL</button>
+  </div>
+</div>
+
+<div class="ayurveda">
+  <div>
+    <img class="ayurimg" src="https://onemg.gumlet.io/image/upload/qvwdjp22uopoyznlzwaj.jpg" alt="">
+    <p>Amalbedha</p>
+    <p class="p-desc">Amalbedha or Amlavetasa is an evergreen tree that is native to parts of Myanmar and...</p>
+  </div>
+  <div>
+    <img class="ayurimg" src="https://onemg.gumlet.io/image/upload/ic14xbnlmdvpzb8wxdxx.jpg" alt="">
+    <p>Babool</p>
+    <p class="p-desc">Babool is also known as the “Healing tree” as all of its parts (bark, root, gum, leav...</p>
+  </div>
+  <div>
+    <img class="ayurimg" src="https://onemg.gumlet.io/image/upload/kf52rw6a5ua5idcio0db.jpg" alt="">
+    <p>Shankhpushpi</p>
+    <p class="p-desc">Shankhpushpi or Shyamaktanta is a perennial herb that is used for its medicinal benef...</p>
+  </div>
+  <div>
+    <img class="ayurimg" src="https://onemg.gumlet.io/image/upload/dz0y6vwb8szaab8jg968.jpg" alt="">
+    <p>Jaggery</p>
+    <p class="p-desc">Jaggery is popularly known as “Guda”. It is a pure, wholesome, unrefined form of suga...</p>
+  </div>
+  </div>
+<!-- AYURVEDA AYURVEDA  -->
+
+
+
+<!-- ******FOOTER STARTS FROM HERE, INSERT FOOTER CODE AFTER THIS LINE****** -->
+
+
+
+<!-- ******FOOTER ENDS HERE, INSERT FOOTER CODE BEFORE THIS LINE****** -->
+
+
 </body>
 </html>
+<script src="indexfiles/index.js"></script>
