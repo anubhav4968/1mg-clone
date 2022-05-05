@@ -1,0 +1,125 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+#container{
+    margin-top: 1%;
+    margin-left: 11%;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+h3{
+    font-weight:500;
+}
+.inputs{
+    margin: auto;
+}
+.inputs>input{
+    height: 30px;
+    width: 100%;
+    margin: auto;
+    padding-left: 2%;
+}
+#container>div{
+    background-color: white;
+    padding: 3%;
+    width:50%;
+}
+input{
+    border: 0.2px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+textarea{
+    padding: 2%;
+    overflow: auto;
+    resize: none;
+    border: 0.2px solid rgb(201, 201, 201);
+    border-radius: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#textarea:focus{
+    outline:none;
+}
+#footer{
+   display: flex;
+   gap: 30px;
+   width: 60%;
+}
+#footer>div:first-child{
+    border-top: .02px solid grey;
+    font-size: 10px;
+    font-weight: lighter;
+    padding: 1%;
+
+}
+#footer>div:nth-child(2){
+    border-top: .05px solid grey;
+    font-size:10px;
+    font-weight: lighter;
+}
+textarea{
+    width: 98%;
+    height: 50px;
+}
+#btn{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+#btn>div{
+    line-height: normal;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    padding: 1%;
+    border-radius: 4px;
+}
+#cancel{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    margin-top: 4%;
+    font-size: larger;
+    color: #ff6f61;
+}
+#btn2{
+    background-color: #ff6f61;
+    cursor: pointer;
+}
+#save{
+    cursor: pointer;
+    margin-top: 4%;
+    background-color: #ff6f61;
+    border: none;
+    font-size: larger;
+    color: white;
+}
+#btn2{
+    cursor: pointer;
+}
+#footer>div>p>a{
+    color: #ff6f61;
+    text-decoration: none;
+}
+#ftr_div{
+    width: 150%;
+}
+.radio1{
+   accent-color: rgb(247, 79, 1);
+   cursor: pointer;
+}
+label{
+    font-size:12px;
+    font-weight: bold;
+    color: grey;
+    cursor: pointer;
+}
+#radio{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 3px;
+}
