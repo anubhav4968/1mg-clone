@@ -1,0 +1,85 @@
+body{
+    background-color: #f6f6f6;
+}
+#container{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+#rating{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 4%;
+    background-color: rgb(4, 153, 4);
+    color: white;
+}
+#rating>p{
+    margin-top: -1px;
+}
+#sidebar{
+    width: 20%;
+    height: 80%;
+    /* border: 1px solid blue; */
+    font-size: 14px;
+    background-color: white;
+}
+#sidebar>div>p{
+    margin-bottom: -5px;
+    font-size: 13px;
+    margin-left: 8%;
+}
+#container{
+    display: flex;
+    /* grid-template-columns: repeat(2,100px); */
+    background-color: #f6f6f6;
+}
+#container>div:nth-child(2){
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+   
+}
+#container>div:nth-child(2)>div{
+    /* border: 1px solid black; */
+    /* height: 100%; */
+    margin-left: 20px;
+    background-color: white;
+}
+#container>div>div img{
+    display: block;
+    margin: auto;
+    width: 170px;
+    height: 250px;
+    /* border: 1px solid teal; */
+    /* background-color: red; */
+}
+#container>div p{
+    
+}
+#ratebox{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: -10%;
+}
+#mrp{
+    text-decoration: line-through;
+}
+#dis{
+    color: green;
+    margin-left: 6px;
+}
+
+#div{
+    display: flex;
+    justify-content: space-between;
+}
+#div>button{
+    height: 10%;
+    margin-top: 10%;
+    border: none;
+    background-color: white;
+    color: red;
+    font-weight: bold;
+}
