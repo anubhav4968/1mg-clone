@@ -1,0 +1,40 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+#container{
+    margin-left: 10%;
+    display: flex;
+    gap :2%;
+    justify-content: space-between;
+}
+#left{
+    width: 70%;
+}
+#right{
+    width: 28%;
+   border: 1px solid;
+}
+#left>h3{
+    font-weight:lighter ;
+}
+#choose{
+    padding: 1%;
+    background-color: white;
+}
+#choose>p{
+    font-size: x-small;
+    color: grey;
+}
+#choose>div{
+    background-color: #fef7ef;
+    padding: 2%;
+}
+#footer{
+    font-size: x-small;
+    color: grey;
+    margin-left: 5%;
+    border-top: 1px solid grey;
+    padding-top: 5%;
+    gap: 5px;
+}

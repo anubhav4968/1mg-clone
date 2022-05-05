@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Cart | 1mg</title>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/addressform.css">
+</head>
+<body>
+    <div id="navbar">
+       
+       
+    </div>
+    
+    <div id="container">
+        <h3>Add New Address</h3>
+        <div>
+            
+            <form>
+                <div class="inputs">
+                    <textarea name="" id="textarea" placeholder="Flat Number, Building Name, Street/Locality"></textarea>
+                    <p id="error1"></p>
+                    <input type="text" id="landmark" placeholder="Landmark(Optional)" >
+                    <p></p>
+                    <input type="Number" name="" id="pincode" placeholder="Pincode">
+                    <p id="pincode_error"></p>
+                    <input type="text" id="locality" placeholder="Locality">
+                    <p></p>
+                    <input type="text" name="" id="city" disabled placeholder="City">
+                    <p></p>
+                    <input type="text" disabled placeholder="State" id="state">
+                    <p></p>
+                    <input type="text" placeholder="Customer Name" id="name">
+                    <p></p>
+                    <input type="text" placeholder="10 Digit Mobile Number" id="mobile">
+                    <p></p>
+                </div>
+                
+                <div id="radio">
+                    <input type="radio" name="home" class="radio1" id="HOME">
+                    <label for="HOME" >HOME </label>
+                    <input type="radio" name="home" class="radio1" id="OFFICE">
+                    <label for="OFFICE">OFFICE </label>
+                    <input type="radio" name="home" class="radio1" id="OTHER">
+                    <label for="OTHER" >OTHER </label>
+                </div>
+              <div id="btn">
+                  <div id="btn1">
+                    <input type="submit" value="CANCEL" id="cancel">
+                    
+                  </div>
+                  <div id ="btn2">
+                    <input type="submit" value="SAVE" id="save">
+                  </div>
+                  
+              </div>
+
+            </form>
+        </div>
+        <div id="footer">
+            
+        </div>
+    </div>
+   
+</body>
+</html>
+<script src="./script/addressform.js" type="module"></script>
