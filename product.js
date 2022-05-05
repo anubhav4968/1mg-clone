@@ -481,7 +481,9 @@ function createid(value)
 
 data.map((ele)=>{
     let div=createid("div");
-
+    div.addEventListener("click",function(){
+        gotoproduct(ele)
+    })
 
     let boximg=createid("div");
     let img=createid("img");
@@ -532,3 +534,11 @@ data.map((ele)=>{
     console.log(div);
     document.getElementById("prodct").append(div);
 })
+
+function gotoproduct(ele)
+{
+  let pdata=[]
+  pdata.push(ele)
+  localStorage.setItem("pdata",JSON.stringify(pdata))
+  window.location.href="product2.html"
+}
