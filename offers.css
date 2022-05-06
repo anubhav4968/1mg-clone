@@ -1,0 +1,64 @@
+body {
+    background: rgba(245, 245, 245, 0.982);
+        }
+        #mainOffers{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+        }
+        #offersName{
+            width: 30%;
+            height: 300px;
+            box-shadow: rgba(0, 0, 0, 0.425) 0px 1px 4px;
+            cursor: pointer;
+            margin-top: 2%;
+            background: white;
+            position: sticky;
+        }
+        #offersName>div{
+            padding: 2% 10px 10% 10px;
+        }
+        #offersName>div:nth-child(1){
+            font-weight: bold;
+        }
+        #offersCoupons{
+            width: 65%;
+            margin-left: 5%;
+        }
+        #offersCoupons>div>div{
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.425) 0px 1px 4px;
+            margin-bottom: 5%;
+            align-items: center;
+            cursor: pointer;
+            padding: 2%;
+            background: white;
+        }
+        #offersCoupons>div>div>div>img{
+            width: 90px;
+            height: 100.05%;
+        }
+        .coupon{
+            margin-left: 5%;
+        }
+        .coupon>p{
+            font-size: 12px;
+        }
+        .coupon>span{
+            font-size: 11px;
+            font-weight: bold;
+            color: salmon;
+        }
+        @media only screen and (min-width:370px) and (max-width:1000px){
+            #mainOffers{
+                display: block;
+            }
+            #offersName{
+                width: 90%;
+                height: 399.1px;
+            }
+            #offersCoupons{
+                width: 90.5%;
+            }
+        }
