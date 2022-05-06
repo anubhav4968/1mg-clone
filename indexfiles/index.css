@@ -245,6 +245,13 @@ body{
     text-align: justify;
     padding: 0 10px;
 }
+.gap{
+    height: 40px;
+    background-color: #F6F6F6;
+}
+.foot-desc>p{
+    color: grey;
+}
 
 /* responsiveness starts here  */
 @media only screen and (min-width: 750px) and (max-width: 1149px){
