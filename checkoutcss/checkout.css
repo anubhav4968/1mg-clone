@@ -1,0 +1,344 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2% 5px 2%;  
+}
+#navbar>div>img{
+    height: 35px;
+}
+#search_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+#search_div>div{
+    display: flex;
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    border: none;
+    height: 20px;
+    width: 400px;
+    background-color: #f1f4f6;
+}
+#btn{
+    border: none;
+    background-color: #f1f4f6;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: #b0a4a8;
+}
+button>i{
+    color: grey;
+    cursor: pointer;
+}
+#search_div+div>a{
+    color: black;
+    text-decoration:none;
+
+}
+#addData{
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    text-align: center; 
+}
+#addData>img{
+    width: 150px;
+    margin: auto;
+}
+#addData>h2{
+    font-weight: 500;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+#addData>button{
+    padding: 3%;
+    width: 50%;
+    margin: auto;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff6f61;
+    font-family: 'Roboto', sans-serif;
+}
+/* *********navbar ends here ******/
+
+#container{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    gap: 2%;
+    margin: auto;
+}
+#left{
+    width: 55%;
+}
+
+#append{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1%;
+    padding-top: 2%;
+    background-color: white;
+}
+#append>div:nth-child(1)>p{
+    margin-top: 2px;
+    width: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#append>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+#append>div:nth-child(1)>div{
+    font-size: 12px;
+}
+#append>div:nth-child(1)>div>p{
+    margin: 2px;
+    text-align: end;
+
+}
+#append>div:nth-child(1)>div>p:nth-child(2){
+ text-decoration: line-through;
+ color: grey;
+ font-weight: 100;
+ font-size: 10px;
+}
+#append>div:nth-child(1)>div>p:nth-child(1){
+    font-weight:bolder;
+}
+
+#append>div:nth-child(2){
+display: flex;
+justify-content: space-between;
+padding: 5px;
+}
+#append>div:nth-child(2)>div:nth-child(1){
+    color: grey;
+    cursor: pointer;
+    font-weight: 100;
+}
+#append>div:nth-child(2)>div:nth-child(1)>button{
+    color: grey;
+    border: none;
+    font-size: 12px;
+    background-color: white;
+    cursor: pointer;
+    font-weight:lighter;
+}
+#append>div:nth-child(2)>div:nth-child(2)>i:nth-child(1){
+    color: white;
+    background-color: #ff6f61;
+    border-radius: 100%;
+    border: .2px solid #ff6f61;
+    cursor: pointer;
+    margin-right: 5px;
+}
+#append>div:nth-child(2)>div:nth-child(2)>i:nth-child(3){
+    color: #ff6f61;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+/* *****************right side start********* */
+#right{
+    width: 45%;
+    padding-top: 2%;
+
+}
+#care_plane{
+    background-color: white;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 2%;
+    border-radius: 4px;
+}
+.span1{
+    color: rgb(7, 139, 7);
+    font-weight: bold;
+}
+#care_plane>p{
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.span2{
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.btn{
+    display: flex;
+    gap: 2%;
+    justify-content: space-evenly;
+    padding: 1%;margin-top: 10px;
+}
+.btn>button:nth-child(1){
+    width: 45%;
+    padding: 2%;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #ff6f61;
+    color: #ff6f61;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.btn>button:nth-child(2){
+    width: 40%;
+    font-size: 12px;
+    font-weight:  bold;
+    color: white;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 4px;
+}
+#coupon{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    border-top: .5px solid grey;
+    margin-top: 1%;
+    align-items: center;
+}
+#coupon>div{
+    display: flex;
+    gap:5px;
+
+}
+#check{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 1%;
+    margin-top: 5%;
+}
+#check>h3{
+    margin: 4px 0px 10px 0px;
+    font-weight:500;
+}
+#check>input{
+    width: 20px;
+    height: 20px;
+    accent-color: #ff6f61;
+}
+#check>p{
+    font-size: 12px;
+    color: grey;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+#check>p>span{
+    color:rgb(7, 139, 7) ;
+}
+
+#amt{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    margin-top: 5%;
+}
+
+#total{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 12px;
+    color: grey;
+}
+#discount{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 12px;
+    color: grey;
+    margin-top: -10px;
+}
+#shipping{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 12px;
+    color: grey;
+    margin-top: -10px;
+}
+
+.payment{
+   margin-top: -10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 2%;
+   padding-right: 2%;
+}
+#saving{
+    display: flex;
+    justify-content: space-between;
+     padding-left: 2%;
+     padding-right: 2%;
+    font-size: 12px;
+    color: grey;
+    margin-top: -10px;
+    background-color: #e4f6e7;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+#checkout_btn{
+    width: 100%;
+    padding: 3%;
+    color: white;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5%;
+}
+#footer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 2%;
+    margin-top: 2%;
+}
+#footer>div:nth-child(2){
+    width: 120%;
+    font-size: 12px;
+    margin-left: 3%;
+    padding-left: 1%;
+    border-top: 1px solid grey;
+
+}
+#footer>div:nth-child(1){
+ font-size: 12px;
+ margin-left: 3%;
+ padding: 5px;
+ border-top: 1px solid grey;
+}
+a{
+    text-decoration: none;
+    color: #ff6f61;
+}
