@@ -109,4 +109,29 @@
     </div>
 </body>
 </html>
+<script>
+  document.querySelector("button").addEventListener("click", mysignup)
+    var regemailpass =JSON.parse(localStorage.getItem("regdata")) || []
+    function mysignup(){
+        var email = document.querySelector("#email").value
+        var password = document.querySelector("#password").value
+
+        if(email == "" || password == ""){
+            alert("Please enter Email/Password to Sign up.")
+        }else{
+            
+        
+        
+        var signupObj = {
+            regemail: email,
+            regpass: password
+        };
+        regemailpass.push(signupObj);
+        localStorage.setItem("regdata",JSON.stringify(regemailpass))
+        alert("Sign up successful, click OK to proceed for Log in")
+        window.location.href = "login.html"
+        }  
+
+    }
+</script>
 <script src="LS-files/slide.js"></script>
