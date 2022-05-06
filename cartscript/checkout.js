@@ -111,7 +111,7 @@ getData.forEach((el,index)=>{
 
 
 let btnfun =()=>{
-    window.location.href="./index.html"
+    window.location.href="./product.html"
 }
 
 // *****************remove fucn**********
