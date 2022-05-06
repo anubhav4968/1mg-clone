@@ -1,0 +1,117 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.close{
+    display: flex;
+    justify-content: end;
+}
+.grey{
+    color: rgb(71, 71, 71);
+}
+#body{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white;
+}
+#left{
+    width: 50%;
+    height: auto;
+}
+#right{
+    width: 43%;
+    height: auto;
+    padding: 20px 40px;
+    border-left: 1px solid grey;
+}
+input{
+    border: none;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6152;
+}
+#form{
+    margin-bottom: 60px;
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.btn-box>button{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #FF6F61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.extra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    height: 25px;
+}
+.extra>a{
+    text-decoration: none;
+    color: #FF6F61;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.footer,.footer>a{
+    text-align: center;
+    color: grey;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+  #slideshow_container {
+    width: 100%;
+    height: 98%;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    padding: 15%;
+    padding-bottom: 7%;
+    color: rgb(83, 83, 83);
+  }
+  .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    box-sizing: border-box;
+  }
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  .mySlides > img {
+    margin-bottom: 20px;
+  }
+  .text > p {
+    color: gray;
+    line-height: 1.2;
+  }
+  
