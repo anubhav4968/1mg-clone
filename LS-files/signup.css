@@ -38,7 +38,7 @@ input{
     border-bottom: 2px solid #ff6152;
 }
 #form{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .btn-box{
     display: flex;
@@ -73,6 +73,9 @@ input{
     text-align: center;
     color: grey;
     font-size: 10px;
+}
+#alert{
+    text-align: center;
 }
 
 
