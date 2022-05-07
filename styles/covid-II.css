@@ -1008,3 +1008,266 @@ td{
     height: 60px;
     margin-top: 25px;
 }
+ @media only screen and (min-width: 421px) and (max-width: 765px){
+     #container{
+         height: 1042px;
+     }
+     #para1>p{
+         font-size: 30px;
+     }
+    #cont1{
+      grid-template-columns: repeat(1,1fr)
+    }
+    #img1{
+        height: 320px;
+    }
+    .cont3>img{
+        width:51%;
+        margin-left: -27px;
+    }
+    #container3{
+        width: 133%;
+    }
+    #container2{
+        width: 151%;
+        margin-top: 92px;
+    }
+    #grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #caretest{
+        width: 108%;
+    }
+     #res 
+    {
+        grid-template-columns: repeat(2,1fr);
+        width: 85%;
+        margin-left: 125px;
+    }
+    #container4{
+        width: 154%;
+    }
+    #choiceimg1{
+        margin-top: 70px;
+    }
+    #choiceimg{
+        height: 190px;
+    }
+    #slct{
+        width: 33%;
+    }
+    #content1{
+        width: 117%;
+    }
+    .mz1{
+        height: 510px;
+    }
+    #gridcontent{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #showmore{
+        width: 80%;
+    }
+    #show{
+        width: 80%;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    #gridcontent1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mz11{
+        height: 480px;
+    }
+    #spas,#as{
+        margin-top: 2500px;
+        margin-top: 60px;
+    }
+    #grdcontent,#grdcontent1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .bluw,.bluw1{
+        height: 579px;
+        height: 568px;
+    }
+    #as1{
+        margin-top: 68px;
+    }
+    #shown{
+        margin-left: -330px;
+        margin-top: -5px;
+    }
+    #showcontainer{
+        background-color: #fef7ef;
+    }
+    #letcont{
+        margin-top: 2515px;
+        width: 180%;
+    }
+    #latimg{
+        margin-left: 247px;
+    }
+    #letcont1,#letcont2{
+        width: 180%;
+
+    }
+    #myTbl{
+        margin-left: -663px;
+    }
+    #tablecontainer{
+        width:193%;
+        height: 1478px;
+    }
+    #svedio{
+        width: 187%;
+    }
+    #footerlink{
+        width: 230%;
+    }
+  }
+
+  @media only screen and (min-width:80px) and (max-width:420px){
+    #container{
+        width:180%;
+        height: 1042px;
+    }
+    #para1>p{
+        font-size: 30px;
+    }
+   #cont1{
+     grid-template-columns: repeat(1,1fr)
+   }
+   #img1{
+       height: 320px;
+   }
+   .cont3>img{
+       width:51%;
+       margin-left: -56px;
+   }
+   #container3{
+       width: 232%;
+   }
+   #container2{
+       width: 240%;
+       margin-top: 92px;
+   }
+   #grid{
+       grid-template-columns: repeat(1,1fr);
+       margin-left: 178px;
+   }
+   #caretest{
+       width: 108%;
+   }
+    #res 
+   {
+       grid-template-columns: repeat(1,1fr);
+       width: 85%;
+       margin-left: 125px;
+   }
+   #bg1{
+       height: 653px;
+   }
+   #bg2{
+        height: 700px;
+   }
+   #bg3{
+       height: 625px;
+   }
+   #container4{
+       width: 193%;
+   }
+   #choiceimg1{
+       margin-top: 70px;
+   }
+   #choiceimg{
+       width: 150%;
+       height: 190px;
+       margin-left: 124px;
+   }
+   #slct{
+       width: 42%;
+   }
+   #hpara{
+       width: 85%;
+   }
+   #content1{
+       width: 180%;
+   }
+   .mz1{
+       height: 510px;
+   }
+   #gridcontent{
+       grid-template-columns: repeat(1,1fr);
+       width: 70%;
+   }
+   #showmore{
+       width: 80%;
+   }
+   #show{
+       width: 115%;
+       margin-top: 50px;
+       margin-left: 0px;
+   }
+   #gridcontent1{
+       grid-template-columns: repeat(1,1fr);
+       width: 70%;
+   }
+   .mz11{
+       height: 480px;
+   }
+   #spas{
+       margin-top: 170px;
+
+   }
+   #grdcontent,#grdcontent1{
+       grid-template-columns: repeat(1,1fr);
+       width: 50%;
+   }
+   .bluw,.bluw1{
+       height: 579px;
+       height: 568px;
+   }
+   #as1{
+       margin-top: 68px;
+   }
+   #shown{
+       margin-left: -330px;
+       margin-top: -140px;
+   }
+   #showcontainer{
+       background-color: #fef7ef;
+   }
+   #letcont{
+       margin-top: 6220px;
+       width: 344%;
+   }
+   #latimg{
+       margin-left: 247px;
+   }
+   #letcont1,#letcont2{
+       width: 345%;
+
+   }
+   #letcont2{
+       margin-top: 100px;
+   }
+   #myTbl{
+       margin-left: -663px;
+   }
+   #tablecontainer{
+       width:375%;
+       height: 1478px;
+   }
+   #vedio{
+       grid-template-columns: repeat(1,1fr);
+       width: 48%;
+   }
+   #svedio{
+       width: 374%;
+       height: 1864px;
+   }
+   #footerlink{
+       width: 435%;
+   }
+
+  } 
