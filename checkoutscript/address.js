@@ -8,10 +8,11 @@ document.getElementById("add_address").addEventListener("click", typeAdd);
     function typeAdd(){
         window.location.href="./addressform.html"
 }
+document.getElementById("continue").addEventListener("click",function(){
+      window.location.href="dellivery.html"
+})
 
 let data = JSON.parse(localStorage.getItem("addData"));
-let arr = [];
-arr.push(data);
 
 window.addEventListener("load", function () {
     displayData(data);
@@ -25,6 +26,10 @@ window.addEventListener("load", function () {
         let radio = document.createElement("input");
         radio.type = "radio";
         radio.setAttribute("name", "radio")
+        radio.addEventListener("click",function(){
+              final(el);
+        })
+       
         let label = document.createElement("label");
         label.innerText = el.Add_type;
         label.setAttribute("for","radio");
@@ -45,4 +50,10 @@ window.addEventListener("load", function () {
         
     });
 
+  }
+
+  let final=(data)=>{
+      let final_add = [];
+      final_add.push(data);
+      localStorage.setItem("final_add",JSON.stringify(final_add))
   }

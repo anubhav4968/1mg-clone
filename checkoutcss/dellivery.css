@@ -81,3 +81,28 @@ body{
 #radio1{
     color :rgb(247, 120, 1);
 }
+#append_add{
+    background-color: white;
+    font-size: 12px;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    border-radius: 4px;
+}
+#append_add>div{
+    margin-left: 1%;
+    padding: 2%;
+}
+#append_add>div>p{
+    margin: 3px;
+    font-size: 12px;
+}
+#append_add>div>div{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+#append_add>div>div>label{
+    font-weight: bold;
+    margin: 3px;
+}

@@ -6,23 +6,18 @@ let container = document.getElementById("container");
 
 
 
-
-let total_price = getData.reduce(function(sum,el,index,arr){
-    sum +=Number(el.price); 
-    return sum;
-},0);
-
 let addressData = JSON.parse(localStorage.getItem("addData")) 
 document.querySelector("#checkout_btn").addEventListener("click",function(){
 if(addressData.length===0){
+    total_ammount();
     window.location.href="addressform.html"
+   
 }else{
+    total_ammount();
     window.location.href="address.html"
 }
     
 })
-
-
 
 
 if(getData.length===0){
@@ -32,7 +27,7 @@ if(getData.length===0){
     let h2 = document.createElement("h2");
     h2.innerText = "Oops!"
     let p = document.createElement("p");
-    p.innerText="Looks like there is no item in your cart Yet"
+    p.innerText="Looks like there is no item in your cart Yet."
     let btn = document.createElement("button");
     btn.addEventListener("click",function(){
         btnfun();
@@ -84,13 +79,13 @@ getData.forEach((el,index)=>{
         if(qty.innerText==1){
             remove_item(el,1)
         }
-        decrease(qty,total_price,el.price);
+        decrease(qty,el.price,el.price_1);
     })
 
     let icon2 = document.createElement("i");
     icon2.setAttribute("class","fa-solid fa-circle-plus")
     icon2.addEventListener("click",function(){
-        increase(qty,total_price,el.price);
+        increase(qty,el.price,el.price_1);
     })
     
     let box3 = document.createElement("div");
@@ -100,14 +95,46 @@ getData.forEach((el,index)=>{
     box4.append(box5,box3);
     append.append(box1,box4)
 })
-
-
-
-
 }
 
 
-// **************************functions***************
+//*******************Ammot Calculation*******************/
+let total_price = getData.reduce(function(sum,el,index,arr){
+    sum +=Number(el.price); 
+    return sum;
+},0);
+
+let total_mrp = getData.reduce(function(sum,el,index,arr){
+    sum +=Number(el.price_1);
+    return sum;
+},0)
+let mrp = document.getElementById("MRP");
+mrp.innerText ="₹ "+ total_mrp;
+let prc = document.getElementById("total_pay");
+prc.innerText = "₹ "+ total_price;
+let discount = document.getElementById("dct");
+discount.innerText = "₹ "+(+total_mrp - Number(total_price));
+let saving = document.getElementById("save");
+saving.innerText = dct.innerText;
+
+
+
+
+// **************************functions******************/
+
+let total_ammount = ()=>{
+    let store_amt = [];
+    let obj = {
+       
+        price : total_price,
+        price_1 :total_mrp,
+    }
+    store_amt.push(obj)
+    localStorage.setItem("store_amt",JSON.stringify(store_amt))
+ }
+
+
+
 
 
 let btnfun =()=>{
@@ -129,22 +156,35 @@ let remove_item =(data,index)=> {
 
 //************increment fucn***********
 
-let decrease = (qty,total_price,price)=>{
+let decrease = (qty,price,price_1)=>{
     let quantity = +qty.innerText 
    
     if(quantity>1){
         quantity--;
-        total_price= Number(total_price)+Number(price)
+        total_price -= Number(price) 
+        total_mrp -= Number(price_1)
       qty.innerText=quantity;  
+      mrp.innerText = total_mrp;
+      prc.innerText = total_price;
+      dct.innerText = +total_mrp - Number(total_price)
+      saving.innerText = dct.innerText;
       ;
     }
     qty.innerText=quantity; 
-    console.log(total_price)
+    // console.log(total_price)
+    // console.log(total_mrp)
 }
-let increase = (qty,total_price,price)=>{
+let increase = (qty,price,price_1)=>{
     let quantity = +qty.innerText;
     quantity++;
-    total_price=Number(total_price)+ Number(price);
+    total_price += Number(price);
+    total_mrp += Number(price_1);
+
     qty.innerText=quantity;
-    console.log(total_price)
+    mrp.innerText = total_mrp;
+    prc.innerText = total_price;
+    dct.innerText = +total_mrp - Number(total_price)
+     saving.innerText = dct.innerText;
+    // console.log(total_price)
+    // console.log(total_mrp)
 }

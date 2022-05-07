@@ -54,7 +54,7 @@ function getData(){
         }
         add_data.push(addressData);
         localStorage.setItem("addData", JSON.stringify(add_data));
-        window.location.href="../address.html"
+        window.location.href="address.html";
     }
     
 };
