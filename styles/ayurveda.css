@@ -387,10 +387,109 @@ a{
     
 }*/
 @media only screen and (min-width: 421px) and (max-width: 765px){
-    #cont6,#cont_grid1{
+    #contimg{
+        width:100%;
+    }
+    #cont6{
         margin:auto;
       grid-template-columns: repeat(2,1fr)
   
     }
-    
+    #cont_grid{
+        background-color: #f7f7f7;
+    }
+    #cont_grid>#cont_grid1{
+        margin: auto;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows:repeat(18,auto);
+  
+    }
+    #banncont{
+        width: 104%;
+        margin-top: 1313px;
+    }
+    #footermid{
+        margin-top: 4030px;
+    }
+    #footgrid{
+        width: 85%;
+    }
+    #foot{
+        width: 94%;
+        margin: auto;
+    }
+    #end{
+        text-align: center;
+        font-size: 19px;
+        padding-left: 129px;
+        padding: 6px;
+        margin-left: -24px;
+    }
+    #num{
+        width: 47%;
+        height: 44px;
+        background-color: #f1f4f6;
+        font-size: 15px;
+        padding-left: 6px;
+        font-family: system-ui;
+        border: 1px solid #f1f4f6;
+        margin-left: -60px;
+    }
+
+  }
+
+  @media only screen and (min-width:80px) and (max-width:420px){
+    #contimg{
+        width:200%;
+    }
+    #cont3{
+        width: 200%;
+    }
+    #cont6{
+        margin:auto;
+        margin-left: 220px;
+      grid-template-columns: repeat(1,1fr)
+  
+    }
+    #cont_grid{
+        background-color: #f7f7f7;
+    }
+    #cont_grid>#cont_grid1{
+        margin: auto;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows:repeat(32,auto);
+  
+    }
+    #banncont{
+        width: 184%;
+        margin-top: 4275px;
+    }
+    #footermid{
+        width: 200%;
+        margin-top: 4030px;
+    }
+    #footgrid{
+        width: 85%;
+    }
+    #foot{
+        width: 94%;
+        margin: auto;
+    }
+    #end{
+        text-align: center;
+        font-size: 19px;
+        padding-left: 129px;
+        padding: 6px;
+        margin-left: -24px;
+    }
+    #num{
+        width: 47%;
+        height: 44px;
+        background-color: #f1f4f6;
+        font-size: 15px;
+        padding-left: 6px;
+        font-family: system-ui;
+        border: 1px solid #f1f4f6;
+        margin-left: -60px;
+    }
   }
