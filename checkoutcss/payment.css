@@ -1,0 +1,275 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+#navbar{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+#navbar>div>a{
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+}
+ #navbar>div{
+     display: flex;
+     gap: 4%;
+     align-items: center;
+ 
+ }
+ #navbar>div>div{
+    display: flex;
+
+ }
+ #navbar>div>div>div{
+     align-items: center;
+     /* border-bottom: 3px solid #ff6f61; */
+ }
+.b1:before {
+margin-right: 5px;
+height: 16px;
+width: 16px;
+font-size: 12px;
+text-align: center;
+content: attr(data-badge);
+display: inline-block;
+color: #ffffff;
+font-weight: bold;
+background-color: #ff6f61;
+border-radius:100%;
+}
+.b3:before{
+margin-right: 5px;
+height: 16px;
+width: 16px;
+font-size: 12px;
+text-align: center;
+content: attr(data-badge);
+display: inline-block;
+color: white;
+font-weight: bold;
+background-color: #ff6f61;
+border-radius:100%;
+}
+.b1+span{
+    font-weight: bold;
+    font-size: 10px;
+    margin-right: 2%;
+}
+.b3+span{
+    font-weight: bold;
+    font-size: 10px;
+}
+#bullet3{
+    width: 100px;
+    padding-bottom: 3%;
+    border-bottom: 5px solid #ff6f61;
+    padding-left:5px;
+}
+.bullet1{
+    padding-bottom: 3%;
+    width: 120px;
+    border-bottom: 5px solid #ff6f61;
+} 
+
+
+
+
+
+
+
+
+#container{
+    width: 95%;
+    display: flex;
+    margin: auto;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#left{
+    width:60%;
+    display: flex;
+}
+
+#options{
+    background-color: #fff3e3;
+    width:40%;
+}
+#options>div{
+    margin-top: 5%;
+    display: flex;
+    padding: 5%;
+    gap: 5%;
+    margin-left: 2%;
+    height: 35px;
+    justify-content: start;
+    align-items: center;
+}
+#options>div>img{
+    height: 35px;
+    width: 35px;
+}
+#cards{
+    background-color: white;
+}
+#checkbox2{
+    width: 30px;
+    height: 30px;
+    accent-color: #ff6f61;
+}
+
+#append_data{
+    background-color: white;
+    height:500px;
+    width: 70%;
+    padding: 5%;
+   margin: auto;
+}
+#append_data input{
+    height: 35px;
+}
+#append_data input:focus{
+    outline: none;
+}
+#append_data input::placeholder{
+    font-size: 16px;
+    width: 100%;
+  
+}
+#append_data>div{
+    width: 80%;
+
+}
+#cards>div>div>input{
+    width: 80%;
+
+}
+#append_data p{
+    font-size: 12px;
+}
+#cardDetails{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: space-between;
+}
+#append_data input{
+    border: none;
+    border-bottom: 3px solid grey;
+}
+
+#cardDetails input{
+    width: 45px;
+}
+#cdNo{
+    margin-top: 10%;
+}
+
+#cod{
+    width: 100%;
+}
+#cod>div{
+    display: flex;
+    border: 2px solid #ff6f61;
+    border-radius: 4px;
+    padding: 3%;
+    width: 90%;
+    gap: 5%;
+}
+
+
+#brand_imgs{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    align-items: center;
+}
+#brand_imgs>img{
+    height: 30px;
+}
+#brand_imgs>p{
+    font-size: 14px;
+}
+#checkbox1{
+    height: 35px;
+    width: 35px;
+    accent-color: #ff6f61;
+}
+#checkbox1>span{
+    font-size: 14px;
+}
+#verbtn{
+    width: 70%;
+    margin: auto;
+   padding: 3%;
+   font-weight: bold;
+   color: white;
+   background-color: #ff6f61;
+   border: none;
+   border-radius: 4px;
+}
+
+
+
+
+#right{
+    width: 30%;
+    margin-left: 2%;
+}
+
+
+#amt{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#total{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 12px;
+    color: grey;
+}
+#discount{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 12px;
+    color: grey;
+    margin-top: -10px;
+}
+#shipping{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 12px;
+    color: grey;
+    margin-top: -10px;
+}
+
+.payment{
+   margin-top: -10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 2%;
+   padding-right: 2%;
+}
+#saving{
+    display: flex;
+    justify-content: space-between;
+     padding-left: 2%;
+     padding-right: 2%;
+    font-size: 12px;
+    color: grey;
+    margin-top: -10px;
+    background-color: #e4f6e7;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
