@@ -1,22 +1,26 @@
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: #f6f6f6;
 }
+
 #container{
-    width: 80%;
+    width: 90%;
     margin: auto;
     background-color: white;
 }
 #rating{
     display: flex;
-    /* border: 1px solid red; */
-    width: 20%;
-    height: 4%;
-    background-color: rgb(4, 153, 4);
+    width: 40px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #1AAA2A;
     color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 2px 3px;
 }
-#rating>p{
-    margin-top: -1px;
-}
+
 #sidebar{
     width: 20%;
     height: 80%;
@@ -55,9 +59,7 @@ body{
     /* border: 1px solid teal; */
     /* background-color: red; */
 }
-#container>div p{
-    
-}
+
 #ratebox{
     display: flex;
     margin-top: 10%;

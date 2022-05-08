@@ -525,7 +525,7 @@ data.map((ele)=>{
     ratebox.append(rate1,dis)
     ratebox.setAttribute("id","ratebox")
 
-    h3.innerText=ele.price;
+    h3.innerText="₹" + " " + ele.price;
     btn.innerText="ADD";
     btndiv.append(h3,btn)
     btndiv.setAttribute("id","div")
@@ -542,3 +542,10 @@ function gotoproduct(ele)
   localStorage.setItem("pdata",JSON.stringify(pdata))
   window.location.href="product2.html"
 }
+
+// import{footer} from "../component/footermain.js"
+// import{navbar} from "../component/navbarmain.js"
+// let div=document.getElementById("footer")
+// div.innerHTML=footer()
+// let nav=document.getElementById("navbar")
+// nav.innerHTML=navbar()

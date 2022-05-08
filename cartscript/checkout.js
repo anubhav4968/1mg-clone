@@ -1,6 +1,6 @@
 
 
-let getData = JSON.parse(localStorage.getItem("pdata")) ||[];
+let getData = JSON.parse(localStorage.getItem("gotocart")) ||[];
 
 let container = document.getElementById("container");
 
@@ -21,7 +21,7 @@ if(addressData.length===0){
 
 
 if(getData.length===0){
-    container.innerHTML =null;
+    // container.innerHTML =null;
     let img = document.createElement("img");
     img.src = "https://www.1mg.com/images/online_consultation/empty-cart-icon.svg";
     let h2 = document.createElement("h2");
