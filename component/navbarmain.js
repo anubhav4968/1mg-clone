@@ -4,7 +4,9 @@ let navbar = () =>{
   <div class="navbar">
       <div class="navleft">
           <div>
-              <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="Tata 1mg logo">
+              
+              <a href="index.html">
+              <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="Tata 1mg logo"></a>
           </div>
 
           <div class="links">

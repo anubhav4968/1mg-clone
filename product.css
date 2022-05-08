@@ -4,24 +4,26 @@ body{
 }
 
 #container{
+   
     width: 90%;
     margin: auto;
+    margin-top: 20px;
     background-color: white;
 }
-#rating{
+#ratings{
     display: flex;
-    width: 20%;
-    height: 6%;
+    width: 15%;
+    height: 20px;
     border-radius: 3px;
     background-color: #1AAA2A;
     color: white;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    padding: 2px 3px;
+    font-size: 10px;
+    /* padding: 2px 3px; */
 }
-#rating>p{
-    margin-top: 15px;
+#ratings>p{
+    margin-top: 25%;
     margin-right: 4px;
 }
 
