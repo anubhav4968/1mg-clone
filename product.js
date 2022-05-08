@@ -542,3 +542,10 @@ function gotoproduct(ele)
   localStorage.setItem("pdata",JSON.stringify(pdata))
   window.location.href="product2.html"
 }
+
+// import{footer} from "../component/footermain.js"
+// import{navbar} from "../component/navbarmain.js"
+// let div=document.getElementById("footer")
+// div.innerHTML=footer()
+// let nav=document.getElementById("navbar")
+// nav.innerHTML=navbar()
