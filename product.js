@@ -489,7 +489,7 @@ data.map((ele)=>{
     let name=createid("h6")
 
     let rati=createid("div");
-    rati.setAttribute("id","rating")
+    rati.setAttribute("id","ratings")
     let rating=createid("p")
     let i=createid("i")
     i.setAttribute("class","fa-solid fa-star")
@@ -555,9 +555,9 @@ let acart=JSON.parse(localStorage.getItem("gotocart"))||[]
    alert("Added to cart")
 }
 
-// import{footer} from "../component/footermain.js"
-// import{navbar} from "../component/navbarmain.js"
-// let div=document.getElementById("footer")
-// div.innerHTML=footer()
-// let nav=document.getElementById("navbar")
-// nav.innerHTML=navbar()
+import{footer} from "../component/footermain.js"
+import{navbar} from "../component/navbarmain.js"
+let div=document.getElementById("footer")
+div.innerHTML=footer()
+let nav=document.getElementById("navbar")
+nav.innerHTML=navbar()
