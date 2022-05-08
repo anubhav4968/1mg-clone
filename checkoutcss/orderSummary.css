@@ -35,7 +35,6 @@ body{
 }
 
 #append_data{
-    background-color: white;
     padding: 2%;
     margin-top: 5%;
     
@@ -43,6 +42,9 @@ body{
 #append_data>div{
     display: flex;
     justify-content:space-between;
+    margin-bottom: 30px;
+    background-color:white;
+    padding: 10px;
 }
 #img{
     display: flex;

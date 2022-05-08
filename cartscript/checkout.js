@@ -8,7 +8,7 @@ let container = document.getElementById("container");
 
 let addressData = JSON.parse(localStorage.getItem("addData")) 
 document.querySelector("#checkout_btn").addEventListener("click",function(){
-if(addressData.length===0){
+if(addressData==undefined || addressData.length===0){
     total_ammount();
     window.location.href="addressform.html"
    
@@ -19,7 +19,7 @@ if(addressData.length===0){
     
 })
 
-
+let append = document.getElementById("append");
 if(getData.length===0){
     // container.innerHTML =null;
     let img = document.createElement("img");
@@ -41,7 +41,7 @@ if(getData.length===0){
     container.style.justifyContent="center";
     container.style.alignItems="center";
 }else{
-    let append = document.getElementById("append")
+   
 getData.forEach((el,index)=>{
     
     let box1 = document.createElement("div");

@@ -72,11 +72,11 @@
                         <div id="cardDetails">
                             <div id="exbox">
                                 <p>Expiry Date(MM/YY)</p>
-                            <input type="number" placeholder="MM">/ <input type="number" placeholder="YY">
+                            <input type="number" maxlength="2" size="2" placeholder="MM">/ <input pattern=".{2}" type="number" placeholder="YY">
                             </div>
                             <div>
                                 <p>Security code</p>
-                                <input type="number" name="" placeholder="CVV" id="">
+                                <input type="number" pattern=".{3}" name="" placeholder="CVV" id="">
                             </div>
                 
                         </div> 
@@ -87,6 +87,10 @@
                         <span>
                             Your card details will be saved securely for future transactions, based on the industry standards.
                         </span>
+                        <div id="send_otp_button">
+                            <button>Send OTP</button>
+                        </div>
+                        
                         
                         
                     
@@ -96,7 +100,7 @@
                 
                 
                 
-                </div>`
+                </div>
             </div>
 
 
