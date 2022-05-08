@@ -481,14 +481,12 @@ function createid(value)
 
 data.map((ele)=>{
     let div=createid("div");
-    div.addEventListener("click",function(){
-        gotoproduct(ele)
-    })
+    
 
     let boximg=createid("div");
     let img=createid("img");
 
-    let name=createid("h4")
+    let name=createid("h6")
 
     let rati=createid("div");
     rati.setAttribute("id","rating")
@@ -527,12 +525,20 @@ data.map((ele)=>{
 
     h3.innerText="₹" + " " + ele.price;
     btn.innerText="ADD";
+    btn.addEventListener("click",function(){
+        cart(ele)
+    })
     btndiv.append(h3,btn)
     btndiv.setAttribute("id","div")
 
-    div.append(boximg,name,rati,ratebox,btndiv);
+    div.append(boximg,name,rati,ratebox);
     console.log(div);
-    document.getElementById("prodct").append(div);
+    let box1=createid("div")
+    box1.append(div,btndiv)
+    document.getElementById("prodct").append(box1);
+    div.addEventListener("click",function(){
+        gotoproduct(ele)
+    })
 })
 
 function gotoproduct(ele)
@@ -541,6 +547,12 @@ function gotoproduct(ele)
   pdata.push(ele)
   localStorage.setItem("pdata",JSON.stringify(pdata))
   window.location.href="product2.html"
+}
+let acart=JSON.parse(localStorage.getItem("gotocart"))||[]
+   function cart(ele){
+   acart.push(ele)
+   localStorage.setItem("gotocart",JSON.stringify(acart))
+   alert("Added to cart")
 }
 
 // import{footer} from "../component/footermain.js"
