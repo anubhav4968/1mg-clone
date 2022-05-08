@@ -7,6 +7,9 @@
     height: 100px;
      /* border: 1px solid red;  */
 }
+#contimg{
+    width:100%;
+}
 #cont3{
     width:100%;
     height: 80px;
@@ -31,7 +34,7 @@
 .cont6{
     border: 1px solid #f7f7f7;    
     border-radius: 12px;
-    height: 325px;
+    height: auto;
 }
 .cont6:hover{
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
