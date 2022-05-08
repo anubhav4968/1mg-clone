@@ -23,6 +23,9 @@ upi.addEventListener("click",function(){
     netbanking.style.backgroundColor ="#fff3e3";
     cod.style.backgroundColor ="#fff3e3";
     document.getElementById("append_data").innerHTML=upi_func();
+    document.getElementById("verbtn").addEventListener("click",(()=>{
+        window.location.href ="success.html";
+    }))
 });
 cards.addEventListener("click",function(){
    
@@ -49,6 +52,9 @@ cod.addEventListener("click",function(){
     netbanking.style.backgroundColor ="#fff3e3";
     cod.style.backgroundColor ="white";
     document.getElementById("append_data").innerHTML=cod_func();
+    document.getElementById("cod_fun").addEventListener("click",function(){
+        window.location.href = "success.html"
+    })
 });
 
 
@@ -152,7 +158,7 @@ let upi_func = ()=>{
         </p>
         <div>
 
-            <button id="verbtn">VERIFY & Pay</button>
+            <button id="verbtn">VERIFY & PAY</button>
         </div>
 
     </div>
@@ -161,6 +167,4 @@ let upi_func = ()=>{
 document.getElementById("send_otp_button").addEventListener("click", function(){
     window.location.href = "paymentOtp.html";
 })
-document.getElementById("cod_func").addEventListener("click",function(){
-    window.location.href="success.html";
-})
+

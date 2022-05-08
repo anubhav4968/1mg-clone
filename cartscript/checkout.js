@@ -1,6 +1,6 @@
 
 
-let getData = JSON.parse(localStorage.getItem("gotocart")) ||[];
+let getData = JSON.parse(localStorage.getItem("gotocart")) || [];
 
 let container = document.getElementById("container");
 
@@ -18,10 +18,10 @@ if(addressData==undefined || addressData.length===0){
 }
     
 })
-
+console.log(getData)
 let append = document.getElementById("append");
-if(getData.length===0){
-    // container.innerHTML =null;
+if(getData.length===0 || getData ===[]){
+    container.innerHTML =null;
     let img = document.createElement("img");
     img.src = "https://www.1mg.com/images/online_consultation/empty-cart-icon.svg";
     let h2 = document.createElement("h2");
@@ -33,6 +33,10 @@ if(getData.length===0){
         btnfun();
     })
     btn.innerText = "ADD MEDICINES"
+    btn.addEventListener("click",function(){
+        window.location.href = "product.html";
+    })
+
     let div = document.createElement("div");
     div.append(img,h2,p,btn)
     div.setAttribute("id","addData")
@@ -76,8 +80,8 @@ getData.forEach((el,index)=>{
     let icon1 = document.createElement("i");
     icon1.setAttribute("class","fa-solid fa-circle-minus");
     icon1.addEventListener("click",function(){
-        if(qty.innerText==1){
-            remove_item(el,1)
+        if(qty.innerText ==="1"){
+            remove_item(el,1);
         }
         decrease(qty,el.price,el.price_1);
     })
@@ -145,15 +149,9 @@ let btnfun =()=>{
 
 // *****************remove fucn**********
 let remove_item =(data,index)=> {
-    if(getData.length>1){
-        getData.splice(index,1);
-        localStorage.setItem("pdata",JSON.stringify("getData"))
-    }else{
-        getData.splice(index,1);
-        localStorage.setItem("pdata",null);
-    }
-    
-   window.location.reload();
+    getData.splice(index,1);
+    localStorage.setItem("gotocart",JSON.stringify(getData));
+    window.location.reload();
 }
 
 //************increment fucn***********
@@ -166,11 +164,13 @@ let decrease = (qty,price,price_1)=>{
         total_price -= Number(price) 
         total_mrp -= Number(price_1)
       qty.innerText=quantity;  
-      mrp.innerText = total_mrp;
-      prc.innerText = total_price;
-      dct.innerText = +total_mrp - Number(total_price)
-      saving.innerText = dct.innerText;
-      ;
+      mrp.innerText ="₹"+ total_mrp;
+      prc.innerText = "₹"+total_price;
+      dct.innerText ="₹"+ (+total_mrp-Number(total_price))
+      saving.innerText =  dct.innerText;
+      
+    }else{
+        
     }
     qty.innerText=quantity; 
     // console.log(total_price)
@@ -183,9 +183,9 @@ let increase = (qty,price,price_1)=>{
     total_mrp += Number(price_1);
 
     qty.innerText=quantity;
-    mrp.innerText = total_mrp;
-    prc.innerText = total_price;
-    dct.innerText = +total_mrp - Number(total_price)
+    mrp.innerText = "₹"+ total_mrp;
+    prc.innerText = "₹"+ total_price;
+    dct.innerText = "₹"+ (+total_mrp-Number(total_price))
      saving.innerText = dct.innerText;
     // console.log(total_price)
     // console.log(total_mrp)

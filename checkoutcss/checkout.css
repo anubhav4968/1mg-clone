@@ -92,6 +92,7 @@ button>i{
 }
 #left{
     width: 55%;
+    margin-top: 2%;
 }
 
 #append{
@@ -173,8 +174,7 @@ padding: 5px;
 /* *****************right side start********* */
 #right{
     width: 45%;
-    padding-top: 2%;
-
+    margin-top: 3%;
 }
 #care_plane{
     background-color: white;
