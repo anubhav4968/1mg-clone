@@ -11,17 +11,17 @@ let navbar = () =>{
               <a style="color: #FF6F61;" href="">MEDICINES</a>
               <a href="">LAB TESTS</a>
               <a href="">ASK DOCTOR</a>
-              <a href="">COVID-19</a>
-              <a href="">AYURVEDA</a>
+              <a href="covid19.html">COVID-19</a>
+              <a href="ayurveda.html">AYURVEDA</a>
               <a href="">CARE PLAN</a>
           </div>
       </div>
 
       <div class="navright">
-          <a href="">Login</a>
-          <a href="">Sign Up</a>
-          <a href="">Offers</a>
-          <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="offers.html">Offers</a>
+          <a href="checkout.html"><i class="fa-solid fa-cart-plus"></i></a>
           <a href="">Need Help?</a>
       </div>
   </div>
