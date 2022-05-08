@@ -2,7 +2,7 @@ let navbar = () =>{
     return ` <div>
     <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="">
 
- <div >
+ <div id="none">
     <div class="bullet1">
             <span class="b1" data-badge="1"></span>
             <span >My Cart</span>

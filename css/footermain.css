@@ -1,0 +1,280 @@
+#f1{
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+
+#b1,#b2,#b3,#b4,#b5{
+  width: 95%;
+  height: auto;
+  /* border: 1px solid black; */
+  margin-left: 2%;
+
+}
+.p1,.p2,.p3,.p4,.p5{
+  color: rgb(100, 98, 98);
+  line-height: 150%;
+}
+/* heading complete */
+
+/* <!-- india start --> */
+#f2{
+  width: 100%;
+  height: auto;
+  border-top: 2px solid rgb(219, 213, 213);
+ 
+}
+
+#i1{
+  width: 100%;
+  height: 35%;
+  /* border: 1px solid green; */
+  text-align: center;
+  font-size: large;
+  
+}
+#i2{
+  width: 100%;
+  height: 60%;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid rgb(228, 223, 223);
+
+}
+.m2{
+  height: auto;
+  width: auto;
+  /* border: 1px solid pink; */
+  text-align: center;
+  font-size: 20px;
+  line-height: 10px;
+}
+#i3{
+  width: 100%;
+  height: auto;
+  /* border: 1px solid green; */
+  text-align: center;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+#form{
+  margin-top: 27px;
+  margin-left: 30px;
+  
+}
+/* india end */
+/* middle start */
+
+#f3{
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid yellow; */
+  display:grid;
+
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(auto);
+  background-color: #fefcf8;
+}
+.cat{
+/* height: 98%;
+width: 15%; */
+margin-left: 4%;
+/* border: 1px solid blueviolet; */
+}
+
+.hed{
+  font-size: larger;
+}
+
+#logo-follow{
+  display: flex;
+  font-size: small;
+}
+.logo1{
+  margin-right: 10px;
+}
+
+/* mid end */
+
+
+#f4{
+  border-top: 2px solid rgb(197, 192, 192);
+  border-bottom: 2px solid rgb(197, 192, 192);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fefcf8;
+
+}
+#f4>div{
+  /* border: 1px solid gray; */
+  height: auto;
+  width: 28%;
+  display: flex;
+}
+.vat{
+  height: auto;
+  width: 30%;
+  /* border: 1px solid firebrick; */
+  
+}
+.img1{
+  width: 100%;
+  height: 50%;
+  margin-top: 20%;
+}
+.sat{
+  height: auto;
+  width: 68%;
+  /* border: 1px solid firebrick; */
+  color: rgb(116, 111, 111);
+}
+
+/* 
+last */
+
+#f5{
+  width: 100%;
+  height: 200px;
+  background-color: #fefcf8;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(172, 167, 167);
+}
+#last{
+  display: flex;
+  width: 50%;
+  height: 40%;
+  /* border: 1px solid blueviolet; */
+  justify-content: center;
+  margin: auto;
+}
+.last2{
+  height: 100%;
+  width: 25%;
+  /* border: 1px solid green; */
+  margin-right: 2px;
+}
+.img2{
+  width: 80%;
+  height: 100%;
+}
+
+@media only screen and (min-width:370px) and (max-width:700px){
+  #f3{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid yellow; */
+    display:grid;
+  
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto);
+    
+  }
+
+  .vat{
+    height: auto;
+    width: 30%;
+    
+  }
+  .sat{
+    height: auto;
+    width: 68%;
+    font-size: 10px;
+  }
+  .main-log img{
+    height:30px;
+    width:60px;
+    
+  }
+}
+
+@media only screen and (min-width:50px) and (max-width:369px){
+  #f3{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid yellow; */
+    display:grid;
+  
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(auto);
+  }
+  .sat{
+    height: auto;
+    width: 68%;
+    font-size: 4px;
+  }
+  .main-log img{
+    height:20px;
+    width:40px;
+    
+  }
+}
+
+
+/* #logo-follow>.logo1{
+  color: #10847e;
+  height:100%;
+  width:25%;
+ 
+} */
+
+#partners{
+  height:200px;
+  width:100%;
+  padding-top: 50px;
+  background-color: #fefcf8;
+  
+}
+#partners>h2{
+  color:#48585E;
+  margin-left:1%;
+  line-height: 24px;
+  font-size: 22px;
+  font-weight: 600;
+  word-spacing: 4px;
+}
+#partners>.logo-social{
+  height:50%;
+  width:100%;
+  display: flex;
+  margin-top: 15px;
+
+}
+.logo-social>.uptologo{
+  
+  height:100%;
+  width:70%;
+  margin-left: 1%;
+  display: flex;
+  padding-right: 1%;
+
+}
+.logo-social>.aflogo{
+ 
+  height:100%;
+  width:30%;
+
+}
+.main-log{
+  width:100px;
+}
+.uptologo>.main-log img{
+  height:50px;
+  width:80px;
+  
+}
+
+/* .aflogo>p{
+  height:30px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  color:#6b7277;
+  margin-left: 20%;
+  font-size: 22px;
+  word-spacing: 1px;
+} */
