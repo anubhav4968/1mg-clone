@@ -1,6 +1,3 @@
-body{
-    font-family: 'Roboto', sans-serif;
-}
 #container{
     border: 1px solid #f7f7f7;
     height: 2010px;
@@ -393,9 +390,6 @@ a{
     
 }*/
 @media only screen and (min-width: 421px) and (max-width: 765px){
-    #cont1{
-        display: none;
-    }
     #contimg{
         width:100%;
     }
@@ -448,9 +442,6 @@ a{
   }
 
   @media only screen and (min-width:80px) and (max-width:420px){
-    #cont1{
-        display: none;
-    }
     #contimg{
         width:200%;
     }

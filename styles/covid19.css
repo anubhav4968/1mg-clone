@@ -1028,6 +1028,7 @@ td{
    }
    #content1{
        width: 117%;
+       height: 1680px;
    }
    .mz1{
        height: 510px;
@@ -1035,11 +1036,11 @@ td{
    #gridcontent{
        grid-template-columns: repeat(2,1fr);
    }
+   #showanc{
+       margin-left: 120px;
+   }
    #showmore{
        width: 80%;
-   }
-   #showanc{
-    margin-left: 120px;
    }
    #show{
        width: 80%;
@@ -1074,7 +1075,7 @@ td{
        background-color: #fef7ef;
    }
    #letcont{
-       margin-top: 680px;
+       margin-top: 115px;
        width: 180%;
    }
    #latimg{
@@ -1165,6 +1166,7 @@ td{
   }
   #content1{
       width: 180%;
+      height: 2370px;
   }
   .mz1{
       height: 510px;
@@ -1178,7 +1180,7 @@ td{
   }
   #show{
       width: 115%;
-      margin-top: 80px;
+      margin-top: 50px;
       margin-left: 0px;
   }
   #gridcontent1{
@@ -1203,18 +1205,21 @@ td{
   #as1{
       margin-top: 68px;
   }
+  #show{
+      margin-top: 65px;
+  }
+  #showanc{
+      margin-left: 230px;
+  }
   #shown{
       margin-left: -330px;
       margin-top: -140px;
-  }
-  #showanc{
-      margin-left: 235px;
   }
   #showcontainer{
       background-color: #fef7ef;
   }
   #letcont{
-      margin-top: 1420px;
+      margin-top: 180pxpx;
       width: 344%;
   }
   #latimg{
