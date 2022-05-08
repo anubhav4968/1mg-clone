@@ -167,6 +167,22 @@ border-radius:100%;
 #cdNo{
     margin-top: 10%;
 }
+#send_otp_button{
+   display: flex;
+   justify-content: center;
+   width: 40%;
+   margin: auto;
+
+}#send_otp_button>button{
+    padding: 15px;
+    font-size: 16px;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
 
 #cod{
     width: 100%;
