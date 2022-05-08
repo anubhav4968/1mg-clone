@@ -503,6 +503,7 @@
         return document.createElement(value)
     }
     let data=JSON.parse(localStorage.getItem("pdata"))
+    console.log(data)
     // console.log(data)
     data.map(function(ele){
         document.getElementById("container").innerHTML=null
@@ -574,7 +575,8 @@
         test.append(sel,strips)
         let button = createid("button")
         button.innerText="Add To Cart"
-        button.addEventListener("click",function(ele){
+        button.addEventListener("click",function(){
+            // console.log(ele)
             cart(ele)
         })
         divcost.append(rate,shippping,inc,test,button)
@@ -619,6 +621,7 @@
     })
    let acart=JSON.parse(localStorage.getItem("gotocart"))||[]
    function cart(ele){
+       console.log(ele)
    acart.push(ele)
    localStorage.setItem("gotocart",JSON.stringify(acart))
    alert("Added to cart")
