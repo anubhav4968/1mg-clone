@@ -93,7 +93,9 @@ getData.forEach((el,index)=>{
 
     let box4 = document.createElement("div");
     box4.append(box5,box3);
-    append.append(box1,box4)
+    let box6 =document.createElement("div");
+    box6.append(box1,box4)
+    append.append(box6)
 })
 }
 

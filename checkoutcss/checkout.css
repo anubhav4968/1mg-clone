@@ -95,52 +95,57 @@ button>i{
 }
 
 #append{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#append>div{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 1%;
     padding-top: 2%;
     background-color: white;
 }
-#append>div:nth-child(1)>p{
+#append>div>div:nth-child(1)>p{
     margin-top: 2px;
     width: 50%;
     font-size: 12px;
     font-weight: bold;
 }
 
-#append>div:nth-child(1){
+#append>div>div:nth-child(1){
     display: flex;
     justify-content: space-between;
     padding: 3px;
 }
-#append>div:nth-child(1)>div{
+#append>div>div:nth-child(1)>div{
     font-size: 12px;
 }
-#append>div:nth-child(1)>div>p{
+#append>div>div:nth-child(1)>div>p{
     margin: 2px;
     text-align: end;
 
 }
-#append>div:nth-child(1)>div>p:nth-child(2){
+#append>div>div:nth-child(1)>div>p:nth-child(2){
  text-decoration: line-through;
  color: grey;
  font-weight: 100;
  font-size: 10px;
 }
-#append>div:nth-child(1)>div>p:nth-child(1){
+#append>div>div:nth-child(1)>div>p:nth-child(1){
     font-weight:bolder;
 }
 
-#append>div:nth-child(2){
+#append>div>div:nth-child(2){
 display: flex;
 justify-content: space-between;
 padding: 5px;
 }
-#append>div:nth-child(2)>div:nth-child(1){
+#append>div>div:nth-child(2)>div:nth-child(1){
     color: grey;
     cursor: pointer;
     font-weight: 100;
 }
-#append>div:nth-child(2)>div:nth-child(1)>button{
+#append>div>div:nth-child(2)>div:nth-child(1)>button{
     color: grey;
     border: none;
     font-size: 12px;
@@ -148,7 +153,7 @@ padding: 5px;
     cursor: pointer;
     font-weight:lighter;
 }
-#append>div:nth-child(2)>div:nth-child(2)>i:nth-child(1){
+#append>div>div:nth-child(2)>div:nth-child(2)>i:nth-child(1){
     color: white;
     background-color: #ff6f61;
     border-radius: 100%;
@@ -156,7 +161,7 @@ padding: 5px;
     cursor: pointer;
     margin-right: 5px;
 }
-#append>div:nth-child(2)>div:nth-child(2)>i:nth-child(3){
+#append>div>div:nth-child(2)>div:nth-child(2)>i:nth-child(3){
     color: #ff6f61;
     background-color: white;
     border-radius: 100%;
