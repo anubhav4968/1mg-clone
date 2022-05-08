@@ -525,7 +525,7 @@ data.map((ele)=>{
     ratebox.append(rate1,dis)
     ratebox.setAttribute("id","ratebox")
 
-    h3.innerText=ele.price;
+    h3.innerText="₹" + " " + ele.price;
     btn.innerText="ADD";
     btndiv.append(h3,btn)
     btndiv.setAttribute("id","div")
