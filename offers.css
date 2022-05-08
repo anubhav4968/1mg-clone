@@ -2,14 +2,16 @@ body {
     background: rgba(245, 245, 245, 0.982);
         }
         #mainOffers{
+            
             display: flex;
             width: 80%;
             margin: auto;
+            margin-top: 16px;
             font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;;
         }
         #offersName{
             width: 30%;
-            height: 300px;
+            height: 330px;
             box-shadow: rgba(0, 0, 0, 0.425) 0px 1px 4px;
             cursor: pointer;
             margin-top: 2%;
