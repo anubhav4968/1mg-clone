@@ -35,3 +35,15 @@ final_add.forEach(el => {
     box.append(box1,nme,num,address,city) 
     append.append(box);
 })
+
+// window.onload= addDateTolocalStrg();
+let del_speed = document.getElementById("speed");
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+const data = new Date();
+
+
+del_speed.innerText = "Between "+(Number(data.getDate())+2)+"-"+(Number(data.getDate())+4)+" "+monthNames[data.getMonth()]

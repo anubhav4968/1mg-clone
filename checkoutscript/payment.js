@@ -11,7 +11,7 @@ wallet.addEventListener("click",function(){
     cards.style.backgroundColor ="#fff3e3";
     netbanking.style.backgroundColor ="#fff3e3";
     cod.style.backgroundColor ="#fff3e3";
-    wallet_func();
+    // wallet_func();
 });
 upi.addEventListener("click",function(){
    
@@ -38,7 +38,6 @@ netbanking.addEventListener("click",function(){
     cards.style.backgroundColor ="#fff3e3";
     netbanking.style.backgroundColor ="white";
     cod.style.backgroundColor ="#fff3e3";
-    netbancking_func();
 });
 cod.addEventListener("click",function(){
    
@@ -115,11 +114,12 @@ let cards_func = ()=>{
 
 let cod_func =()=>{
     return ` <div id="cod">
-    <div>
+    <div id="cod_fun">
         <img src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530103046/marketing/dwuduzecduhobnrvro1z.png" alt="">
-        <h4>CASH ON DELIVERY</h4>
+        <h4 >CASH ON DELIVERY</h4>
     </div>
 </div>`
+
 }
 
 let upi_func = ()=>{
@@ -153,4 +153,5 @@ let upi_func = ()=>{
     </div>
 </div>`
 }
+
 

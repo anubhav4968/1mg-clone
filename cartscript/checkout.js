@@ -1,6 +1,6 @@
 
 
-let getData = JSON.parse(localStorage.getItem("pdata")) ||[];
+let getData = JSON.parse(localStorage.getItem("gotocart"));
 
 let container = document.getElementById("container");
 

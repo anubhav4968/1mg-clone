@@ -563,8 +563,8 @@
         test.append(sel,strips)
         let button = createid("button")
         button.innerText="Add To Cart"
-        button.addEventListener("click",function(ele){
-            cart(ele)
+        button.addEventListener("click",function(){
+            cart(ele);
         })
         divcost.append(rate,shippping,inc,test,button)
         let image=createid("img")
@@ -606,7 +606,7 @@
         document.getElementById("container").append(boxdiv,namediv,costdiv)
 
     })
-   let acart=JSON.parse(localStorage.getItem("gotocart"))||[]
+   let acart=JSON.parse(localStorage.getItem("gotocart"))||[];
 function cart(ele){
    acart.push(ele)
    localStorage.setItem("gotocart",JSON.stringify(acart))
