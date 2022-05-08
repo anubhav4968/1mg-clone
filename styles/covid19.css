@@ -3,6 +3,7 @@
     height: 560px;
     /* border: 1px solid blue; */
     background: #fdf0df;
+    margin-top: -45px;
 }
 #cont1{
     display: grid;
@@ -1037,6 +1038,9 @@ td{
    #showmore{
        width: 80%;
    }
+   #showanc{
+    margin-left: 120px;
+   }
    #show{
        width: 80%;
        margin-top: 50px;
@@ -1070,7 +1074,7 @@ td{
        background-color: #fef7ef;
    }
    #letcont{
-       margin-top: 2515px;
+       margin-top: 680px;
        width: 180%;
    }
    #latimg{
@@ -1174,7 +1178,7 @@ td{
   }
   #show{
       width: 115%;
-      margin-top: 50px;
+      margin-top: 80px;
       margin-left: 0px;
   }
   #gridcontent1{
@@ -1203,11 +1207,14 @@ td{
       margin-left: -330px;
       margin-top: -140px;
   }
+  #showanc{
+      margin-left: 235px;
+  }
   #showcontainer{
       background-color: #fef7ef;
   }
   #letcont{
-      margin-top: 6220px;
+      margin-top: 1420px;
       width: 344%;
   }
   #latimg{
