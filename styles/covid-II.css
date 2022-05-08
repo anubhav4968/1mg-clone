@@ -1008,6 +1008,10 @@ td{
     height: 60px;
     margin-top: 25px;
 }
+#ay{
+    width: 80%;
+    margin: auto;
+}
  @media only screen and (min-width: 421px) and (max-width: 765px){
      #container{
          height: 1042px;
