@@ -1,0 +1,86 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+#container{
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: whitesmoke;
+    border: 1px solid grey;
+}
+#logo{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+   background-color: brown;
+   padding: 5%;
+}
+#container>div:nth-child(1){
+background-color: white;
+}
+#container>div:nth-child(2){
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    background-color: whitesmoke;
+    margin-bottom: 0;
+}
+#container>div:nth-child(3){
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    background-color: whitesmoke;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#otp{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+    height: 35px;
+    background-color: rgb(102, 39, 39);
+    padding: 3%;
+    background-color: whitesmoke;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+#resend{
+    background-color: whitesmoke;
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#resend>a{
+    text-decoration: none;
+    color: rgb(209, 24, 24);
+    font-size: 14px;
+    padding: 2%;
+}
+#resend>input{
+   height: 30px;
+   text-align: center;
+   width: 50%;
+   margin: auto;
+}
+input:focus{
+    outline: none;
+}
+#btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#btns>button{
+    width: 30%;
+    padding: 2%;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}

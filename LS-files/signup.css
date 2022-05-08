@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("/images/bg.jpg");
+    background-image: url("images/bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -39,6 +39,9 @@ input{
     margin-top: 15px;
     margin-bottom: 15px;
     border-bottom: 2px solid #ff6152;
+}
+input:focus{
+    outline: none;
 }
 #form{
     margin-bottom: 50px;
