@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkoutcss/paymentOtp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Cart | 1mg</title>
+    <link rel="icon" type="image/x-icon" href="https://www.1mg.com/images/tata_1mg_logo.svg">
+</head>
+<body>
+    <div id="container">
+        <div>
+            <div id="logo">
+                <img src="https://www.1mg.com/images/tata_1mg_custom_footer.svg" alt="">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAMAAABq4atUAAAAhFBMVEX3nhvrABv/////XwD+7/D958XsDyj5tlT82qn/+fDwP1P+8+L+awXyIxD7zozwFxT5r7f1f4zyX2/uL0X9bwb+7dT3pCn93+L3mRn6hhD+WQH81Jr5vGHtHzb4r0X94Lf7z9T1Lw35QQj8egv0b376v8X2kJv2X0P6wnD5ihL4bE74nyWXYNIuAAABPklEQVQ4jZ2V61KDMBCFFwIkBEWgAloubZXWqu//fnInJSd2yvnFZPLNHnaTE7IXRYncWVYlm2heSouSE2WcF4GykaaPPLEWebHTrR1aYFYt1pATW7fyLnagIp24ewPlO0vT1y9pEgp09HTmmT296dR1hhzIMEiFI+QAby+s06sO0WGA1j3otO8h9q5Dmd9BOTB3GhiTQbITnZkK4VJBCxm6MJYCf1XYFIFCHzPEgD9uE3K3MMgf+SRN/R70CSCXjENixlG5BNzdg8ItULHN3qZGNMDffoFwyx8fbrnxGD1+YP0WQvf29E+h8N4l/IaF+owwjgr2OxVDsFS4F+jeiiXCIGUMozEsUSD96GGZqWHZKl710ItALKfrB8BJFKy69A+AWypIPSW5ArU6N1J6npTxeV4KxJXXVPNS+MrGP15ME2pz0EKIAAAAAElFTkSuQmCC" alt="">
+            </div>
+        </div>
+        
+        <div>
+            <p>
+                The One Time Password has been sent to the below registered Mobile Number. Please use the OTP and authenticate the transaction.
+            </p>   
+        
+        </div>
+        <div>
+            <p>Date :<span id="date"></span></p>
+            <p>Card Number : <span id="cardNo"></span></p>
+            <p>Mobile Number : XXXXXX <span id="MobileNo"></span></p>
+        </div>
+        <div>
+            <div id="otp" >
+                <span>OTP</span>
+                <span>(One Time Password)</span>
+            </div>
+            <div id="resend">
+                <a href="">Resend OTP</a>
+                <input type="text" placeholder="Enter OTP">
+            </div>
+            <div id="btns">
+                <button id="submit">SUBMIT</button>
+                <button>CANCEL</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+
+    let getdata = JSON.parse(localStorage.getItem("final_add"))
+    console.log()
+
+    let today = new Date();
+    document.getElementById("date").innerText =" "+ today.getDate() +'-'+(today.getMonth()+1)+'-'+ today.getFullYear();
+    
+    document.getElementById("cardNo").innerText = (Math.random()*10000).toFixed(0)+" "+(Math.random()*10000).toFixed(0)+" "+(Math.random()*10000).toFixed(0)+" "+(Math.random()*10000).toFixed(0);
+    let lastDigit =(data)=>{
+        let lastno = "";
+        if(data.length>5){
+            for(let i=data.length-4; i<data.length; i++){
+            lastno+=data[i];
+        }
+        }
+        return lastno;
+       
+    }
+
+
+    document.getElementById("MobileNo").innerText = lastDigit(getdata[0].Mobile);
+
+    document.getElementById("submit").addEventListener("click",function(){
+        window.location.href="success.html"
+    })
+    
+</script>
