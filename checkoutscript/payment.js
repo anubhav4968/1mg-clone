@@ -1,3 +1,5 @@
+
+
 let wallet = document.getElementById("wallets");
 let upi = document.getElementById("upi");
 let cards = document.getElementById("cards");
@@ -11,7 +13,7 @@ wallet.addEventListener("click",function(){
     cards.style.backgroundColor ="#fff3e3";
     netbanking.style.backgroundColor ="#fff3e3";
     cod.style.backgroundColor ="#fff3e3";
-    wallet_func();
+    // wallet_func();
 });
 upi.addEventListener("click",function(){
    
@@ -38,7 +40,6 @@ netbanking.addEventListener("click",function(){
     cards.style.backgroundColor ="#fff3e3";
     netbanking.style.backgroundColor ="white";
     cod.style.backgroundColor ="#fff3e3";
-    netbancking_func();
 });
 cod.addEventListener("click",function(){
    
@@ -97,10 +98,13 @@ let cards_func = ()=>{
         <div>
             <input type="text" name="" placeholder="Name On Card" id="">
         </div>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="checkbox2">
         <p>
             Your card details will be saved securely for future transactions, based on the industry standards.
         </p>
+        <div id="send_otp_button">
+            <button>Send OTP</button>
+        </div>
         
         
     
@@ -115,11 +119,12 @@ let cards_func = ()=>{
 
 let cod_func =()=>{
     return ` <div id="cod">
-    <div>
+    <div id="cod_fun" >
         <img src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530103046/marketing/dwuduzecduhobnrvro1z.png" alt="">
-        <h4>CASH ON DELIVERY</h4>
+        <h4 >CASH ON DELIVERY</h4>
     </div>
 </div>`
+
 }
 
 let upi_func = ()=>{
@@ -152,5 +157,10 @@ let upi_func = ()=>{
 
     </div>
 </div>`
-}
-
+};
+document.getElementById("send_otp_button").addEventListener("click", function(){
+    window.location.href = "paymentOtp.html";
+})
+document.getElementById("cod_func").addEventListener("click",function(){
+    window.location.href="success.html";
+})

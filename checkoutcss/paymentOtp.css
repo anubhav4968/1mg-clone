@@ -10,13 +10,14 @@ body{
     border: 1px solid grey;
 }
 #logo{
-    width: 80%;
+    width:94%;
+    padding: 3%;
     display: flex;
     margin: auto;
     justify-content: space-between;
-   background-color: brown;
-   padding: 5%;
+    background-color: brown;
 }
+
 #container>div:nth-child(1){
 background-color: white;
 }

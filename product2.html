@@ -576,8 +576,12 @@
         let button = createid("button")
         button.innerText="Add To Cart"
         button.addEventListener("click",function(){
+<<<<<<< HEAD
+            cart(ele);
+=======
             // console.log(ele)
             cart(ele)
+>>>>>>> 80c2b4225285181ebc05f5f823cac667fdb09336
         })
         divcost.append(rate,shippping,inc,test,button)
         let image=createid("img")
@@ -619,9 +623,14 @@
         document.getElementById("container").append(boxdiv,namediv,costdiv)
 
     })
+<<<<<<< HEAD
+   let acart=JSON.parse(localStorage.getItem("gotocart"))||[];
+function cart(ele){
+=======
    let acart=JSON.parse(localStorage.getItem("gotocart"))||[]
    function cart(ele){
        console.log(ele)
+>>>>>>> 80c2b4225285181ebc05f5f823cac667fdb09336
    acart.push(ele)
    localStorage.setItem("gotocart",JSON.stringify(acart))
    alert("Added to cart")
