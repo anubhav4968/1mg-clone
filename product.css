@@ -10,8 +10,8 @@ body{
 }
 #rating{
     display: flex;
-    width: 40px;
-    height: 18px;
+    width: 20%;
+    height: 6%;
     border-radius: 3px;
     background-color: #1AAA2A;
     color: white;
@@ -20,6 +20,10 @@ body{
     font-size: 16px;
     padding: 2px 3px;
 }
+#rating>p{
+    margin-top: 15px;
+    margin-right: 4px;
+}
 
 #sidebar{
     width: 20%;
@@ -27,6 +31,9 @@ body{
     /* border: 1px solid blue; */
     font-size: 14px;
     background-color: white;
+}
+#sidebar>div>h3{
+    font-size: 18px;
 }
 #sidebar>div>p{
     margin-bottom: -5px;
@@ -63,7 +70,7 @@ body{
 #ratebox{
     display: flex;
     margin-top: 10%;
-    margin-bottom: -10%;
+    margin-bottom: -9%;
 }
 #mrp{
     text-decoration: line-through;

@@ -488,7 +488,7 @@ data.map((ele)=>{
     let boximg=createid("div");
     let img=createid("img");
 
-    let name=createid("h4")
+    let name=createid("h6")
 
     let rati=createid("div");
     rati.setAttribute("id","rating")
