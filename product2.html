@@ -19,7 +19,7 @@
             width: 90%;
             margin: auto;
             justify-content: space-around;
-            
+            margin-top: 30px;
         }
         #container>div:nth-child(1){
             /* border: 1px solid red; */
@@ -28,6 +28,7 @@
         #container>div:nth-child(1)>img{
             /* width:250px;*/
             width: 100%;
+            height: 50%;
             /* border: 1px solid teal; */
             /* margin-left: 5%; */
             margin-top: 30%;
@@ -40,14 +41,19 @@
         }
         #namediv>div:nth-child(2){
             display: flex;
+            margin-top: 30px;
             border: 1px solid green;
-            width: 10%;
+            width: 15%;
             height: 3%;
             padding: 2px;
             padding-right: 5px;
             background-color: #1aab2a;
             color: white;
         }
+    #namediv>h4
+    {
+        margin-top: 30px;
+    }
         #namediv>div:nth-child(2)>p{
             margin-top: -1px;
             margin-right: 4px;
@@ -576,8 +582,7 @@
         let button = createid("button")
         button.innerText="Add To Cart"
         button.addEventListener("click",function(){
-            // console.log(ele)
-            cart(ele)
+            cart(ele);
         })
         divcost.append(rate,shippping,inc,test,button)
         let image=createid("img")
@@ -619,15 +624,14 @@
         document.getElementById("container").append(boxdiv,namediv,costdiv)
 
     })
-   let acart=JSON.parse(localStorage.getItem("gotocart"))||[]
-   function cart(ele){
-       console.log(ele)
+   let acart=JSON.parse(localStorage.getItem("gotocart"))||[];
+function cart(ele){
    acart.push(ele)
    localStorage.setItem("gotocart",JSON.stringify(acart))
    alert("Added to cart")
 }
-    import{footer} from "../component/footermain.js"
-    import{navbar} from "../component/navbarmain.js"
+    import{footer} from "./component/footermain.js"
+    import{navbar} from "./component/navbarmain.js"
     let foot=document.getElementById("footer")
     foot.innerHTML=footer()
     let nav=document.getElementById("navbar")
