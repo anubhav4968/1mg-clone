@@ -106,3 +106,24 @@ body{
     font-weight: bold;
     margin: 3px;
 }
+
+@media only screen and (min-width:10px) and (max-width:999px){
+    #container{
+        display: block;
+     
+        margin: auto;
+    }
+    #left,#rigth{
+        width: 100%;
+        padding: 0;
+    }
+    #right{
+        width: 100%;
+        
+    }
+    #append_add{
+        width: 100%;
+       
+    }
+
+}
