@@ -555,9 +555,9 @@ let acart=JSON.parse(localStorage.getItem("gotocart"))||[]
    alert("Added to cart")
 }
 
-import{footer} from "../component/footermain.js"
-import{navbar} from "../component/navbarmain.js"
-let div=document.getElementById("footer")
-div.innerHTML=footer()
-let nav=document.getElementById("navbar")
-nav.innerHTML=navbar()
+// import{footer} from "../component/footermain.js"
+// import{navbar} from "../component/navbarmain.js"
+// let div=document.getElementById("footer")
+// div.innerHTML=footer()
+// let nav=document.getElementById("navbar")
+// nav.innerHTML=navbar()
