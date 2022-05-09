@@ -20,8 +20,8 @@ let navbar = () =>{
       </div>
 
       <div class="navright">
-          <a href="login.html">Login</a>
-          <a href="signup.html">Sign Up</a>
+          <i class="fa-solid fa-user"></i>
+          <a href="index.html">Sign out</a>
           <a href="offers.html">Offers</a>
           <a href="checkout.html"><i class="fa-solid fa-cart-plus"></i></a>
           <a href="">Need Help?</a>
