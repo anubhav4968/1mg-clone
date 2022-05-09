@@ -70,3 +70,10 @@ border-radius:100%;
     width: 120px;
     border-bottom: 5px solid #ff6f61;
 } 
+@media only screen and (min-width:10px) and (max-width:999px){
+    #navbar>div>div{
+        display: none;
+    }
+
+
+}

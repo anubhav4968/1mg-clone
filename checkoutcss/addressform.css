@@ -124,3 +124,31 @@ label{
     align-content: center;
     gap: 3px;
 }
+
+@media only screen and (min-width:10px) and (max-width:999px){
+    #container{
+      
+        width: 80%;
+        margin: auto;
+        display: block;
+        gap: 2%;
+        margin: auto;
+    }
+    #container>div{
+        background-color: red;
+        margin: auto;
+        width: 98%;
+    }
+    #footer{
+        display: block;
+        margin: auto;
+        margin-top: 6%;
+        width: auto;
+
+    }
+    #footer>div:nth-child(2){
+        width: 100%;
+    }
+    
+    
+}
