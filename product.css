@@ -4,31 +4,31 @@ body{
 }
 
 #container{
+   
     width: 90%;
     margin: auto;
+    margin-top: 20px;
     background-color: white;
 }
-#rating{
+#ratings{
     display: flex;
-    width: 20%;
-    height: 6%;
+    width: 15%;
+    height: 20px;
     border-radius: 3px;
     background-color: #1AAA2A;
     color: white;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    padding: 2px 3px;
+    font-size: 10px;
 }
-#rating>p{
-    margin-top: 15px;
+#ratings>p{
+    margin-top: 25%;
     margin-right: 4px;
 }
 
 #sidebar{
     width: 20%;
     height: 80%;
-    /* border: 1px solid blue; */
     font-size: 14px;
     background-color: white;
 }
@@ -42,35 +42,36 @@ body{
 }
 #container{
     display: flex;
-    /* grid-template-columns: repeat(2,100px); */
     background-color: #f6f6f6;
 }
 #container>div:nth-child(2){
-    /* border: 1px solid red; */
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
    
 }
 #container>div:nth-child(2)>div{
-    /* border: 1px solid black; */
-    /* height: 100%; */
-    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
     background-color: white;
+}
+#container>div:nth-child(2)>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #container>div>div img{
     display: block;
     margin: auto;
     width: 170px;
-    height: 250px;
-    /* border: 1px solid teal; */
-    /* background-color: red; */
+    height: 170px;
 }
 
 #ratebox{
     display: flex;
-    margin-top: 10%;
-    margin-bottom: -9%;
+    margin: 0;
+    margin-top: 10px;
 }
 #mrp{
     text-decoration: line-through;
@@ -92,10 +93,10 @@ body{
     color: red;
     font-weight: bold;
 }
+
 @media only screen and (min-width: 750px) and (max-width: 1149px)
 {
     #container>div:nth-child(2){
-        /* border: 1px solid red; */
         grid-template-columns: repeat(3,1fr);
         gap: 20px;
         margin-left: 20px;
@@ -105,14 +106,11 @@ body{
     }
     #container>div>div img{
     width: 150px;
-    height: 200px;
-    /* border: 1px solid teal; */
-    /* background-color: red; */
+    height: 150px;
 }
 }
-@media only screen and (min-width: 310px) and (max-width: 749px){
+@media only screen and (min-width: 500px) and (max-width: 749px){
     #container>div:nth-child(2){
-        /* border: 1px solid red; */
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
         margin-left: 20px;
@@ -123,9 +121,7 @@ body{
     }
     #container>div>div img{
     width: 150px;
-    height: 200px;
-    /* border: 1px solid teal; */
-    /* background-color: red; */
+    height: 150px;
     }
     #sidebar{
         width: 25%;
@@ -138,32 +134,23 @@ body{
         font-size: 10px;
     }
 }
-@media only screen and (min-width: 10px) and (max-width: 309px){
+@media only screen and (min-width: 10px) and (max-width: 499px){
     #container>div:nth-child(2){
-        /* border: 1px solid red; */
+        width: 100%;
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
-        margin-left: 20px;
+        margin: auto;
     }
     .search{
         width: 100%;
         font-size: 10px;
     }
     #container>div>div img{
-    width: 100px;
+    width: 150px;
     height: 150px;
-    /* border: 1px solid teal; */
-    /* background-color: red; */
 }
 
     #sidebar{
-        width: 26%;
-        height: 50%;
-    }
-    #sidebar>div>p{
-        font-size: 8px;
-    }
-    #sidebar>div>h3{
-        font-size: 8px;
+        display: none;
     }
 }

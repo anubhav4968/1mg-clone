@@ -8,12 +8,53 @@
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="css/footermain.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="indexfiles/productfooter.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/navbarmain.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
 <body>
-    <div id="navbar">
+    <!-- NAVBAR STARTS HERE. NAVBAR STARTS HERE. NAVBAR STARTS HERE -->
+    <div class="navbar">
+        <div class="navleft">
+            <div>
+                <img src="images/logo.png" alt="Tata 1mg logo">
+            </div>
 
+            <div class="links">
+                <a style="color: #FF6F61;" href="">MEDICINES</a>
+                <a href="">LAB TESTS</a>
+                <a href="">ASK DOCTOR</a>
+                <a href="covid19.html">COVID-19</a>
+                <a href="ayurveda.html">AYURVEDA</a>
+                <a href="">CARE PLAN</a>
+            </div>
+        </div>
+
+        <div class="navright">
+            <i class="fa-solid fa-user"></i>
+            <a href="index.html">Sign out</a>
+            <a href="offers.html">Offers</a>
+            <a href="checkout.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="">Need Help?</a>
+        </div>
     </div>
+    
+    <!-- NAVBAR ENDS HERE. NAVBAR ENDS HERE. NAVBAR ENDS HERE -->
+
+    <!-- SEARCH BAR STARTS HERE. SEARCH BAR STARTS HERE. SEARCH BAR STARTS HERE. -->
+    <div class="searchdiv">
+        <div class="location-btn">
+            <button onclick="getLoc()"><i class="fa-solid fa-location-dot"></i><span id="changecity">Get Location</span><i class="fa-solid fa-location-crosshairs"></i></button>
+            <input type="text" placeholder="Search for Medicines and Health Products"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="upload-btn">
+            <p><span><i class="fa-solid fa-bolt"></i></span> QUICK BUY! Flat 25% off*</p>
+            <button>Upload</button>
+        </div>
+    </div>
+    <!-- SEARCH BAR ENDS  -->
     <!-- <i class="fa-solid fa-star"></i> -->
     <div id="container">
         <div id="sidebar"> 
@@ -82,9 +123,92 @@
 
         </div>
     </div>
-    <div id="footer">
+    
 
-    </div>
+
+    <!-- footer starts here  -->
+    <div id="footer">
+        <div class="box1">
+          <div>
+            <h6>Know us</h6>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Press Coverage</p>
+            <p>Careers</p>
+            <p>Business Partnership</p>
+            <p>Become a Health Partner</p>
+          </div>
+          <div>
+            <h6>Our Policies</h6>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p>Editorial Policy</p>
+            <p>Return Policy</p>
+            <p>IP Policy</p>
+            <p>Grievance Redressal Policy</p>
+          </div>
+          <div>
+            <h6>Our Services</h6>
+            <p>Order Medicines</p>
+            <p>Book Lab Tests</p>
+            <p>Consult a Doctor</p>
+            <p>Ayurveda Articles</p>
+            <p>Hindi Articles</p>
+            <p>Care Plan</p>
+          </div>
+          <div>
+            <h6>Connect</h6>
+            <p>Social Links</p>
+            <div class="connect">
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Want daily dose of health? </p>
+            <button class="footerbtn">SIGN UP</button>
+          </div>
+          <div>
+            <h6>Download App</h6>
+            <div class="connect">
+              <i class="fa-brands fa-google-play"></i>
+              <i class="fa-brands fa-app-store"></i>
+            </div>
+          </div>
+        </div>
+      
+        <div class="box2">
+          <div>
+            <div><img src="images/001.PNG" alt=""></div>
+            <div>
+              <h4>Reliable</h4>
+              <p class="box2-p">All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+            </div>
+          </div>
+          <div>
+            <div><img src="images/002.PNG" alt=""></div>
+            <div>
+              <h4>Secure</h4>
+              <p class="box2-p">Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+            </div>
+          </div>
+          <div>
+            <div><img src="images/003.PNG" alt=""></div>
+            <div>
+              <h4>Affordable</h4>
+              <p class="box2-p">Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="box3">
+          <div>
+            <img src="https://static.legitscript.com/seals/729605.png" alt="">
+            <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" alt="">
+          </div>
+          <div><h5>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h5></div>
+        </div>
+      </div>
 </body>
 </html>
-<script src="product.js"></script>
+<script src="product.js" type="module"></script>

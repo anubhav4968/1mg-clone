@@ -3,6 +3,9 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+input:focus{
+    outline: none;
+}
 .navbar,.navleft,.navright,.navleft>div{
     display: flex;
     align-items: center;
@@ -84,6 +87,7 @@ body{
     background-color: #F1F4F6;
     color: #666666;
     border-radius: 2px;
+    padding: 4px 8px;
 }
 .upload-btn{
     width: 30%;
@@ -112,6 +116,9 @@ body{
     display: flex;
     justify-content: space-around;
 
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 #drop-btn{
     height: 30px;
@@ -398,6 +405,9 @@ body{
         background-color: #F1F4F6;
         color: #666666;
         border-radius: 2px;
+    }
+    input:focus{
+        outline: none;
     }
     .upload-btn{
         width: 0;

@@ -159,7 +159,7 @@ let remove_item =(data,index)=> {
 let decrease = (qty,price,price_1)=>{
     let quantity = +qty.innerText 
    
-    if(quantity>1){
+    if(quantity>=1){
         quantity--;
         total_price -= Number(price) 
         total_mrp -= Number(price_1)

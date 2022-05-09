@@ -51,13 +51,16 @@ p>a{
     text-decoration: none;
 }
 #append_add{
-    background-color: white;
+    display: flex;
+    flex-direction: column;
     font-size: 12px;
     margin-bottom: 5%;
 }
 #append_add>div{
-    margin-left: 5%;
+    margin-bottom: 2%;
     padding: 2%;
+    background-color: white;
+    
 }
 #append_add>div>p{
     margin: 3px;

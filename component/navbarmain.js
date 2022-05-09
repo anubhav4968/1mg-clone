@@ -4,13 +4,15 @@ let navbar = () =>{
   <div class="navbar">
       <div class="navleft">
           <div>
-              <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="Tata 1mg logo">
+              
+              <a href="index.html">
+              <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="Tata 1mg logo"></a>
           </div>
 
           <div class="links">
               <a style="color: #FF6F61;" href="">MEDICINES</a>
               <a href="">LAB TESTS</a>
-              <a href="">ASK DOCTOR</a>
+              <a href="product.html">PRODUCTS</a>
               <a href="covid19.html">COVID-19</a>
               <a href="ayurveda.html">AYURVEDA</a>
               <a href="">CARE PLAN</a>
@@ -18,8 +20,9 @@ let navbar = () =>{
       </div>
 
       <div class="navright">
-        
-          <a href="">Offers</a>
+          <i class="fa-solid fa-user"></i>
+          <a href="index.html">Sign out</a>
+          <a href="offers.html">Offers</a>
           <a href="checkout.html"><i class="fa-solid fa-cart-plus"></i></a>
           <a href="">Need Help?</a>
       </div>
