@@ -410,7 +410,7 @@ let data=[
     {
         img_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638879401/xxzsahtv1qamsstoeugg.jpg",
         name:"Accu Chek SugarView System Combo Pack of Accu-Chek SugarView 1 Color Card, Accu-Chek Active 10 Test Strip & Accu-Chek Softclix Kit",
-        NAME1:"Accu Chek SugarView System Combo Pack of Accu-Chek...",
+        name1:"Accu Chek SugarView System Combo Pack of Accu-Chek...",
         ratings:4,
         price_1:1199,
         price:1111,
@@ -446,7 +446,7 @@ let data=[
     {
         img_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621837272/lu2zigwbwgzqxjtpgulg.jpg",
         name:"Accu-Chek Combo Pack of Instant Wireless Blood Glucose Monitoring System with 10 Strip Free & Accu-Chek Instant 25 Strip",
-        nmae1:"Accu-Chek Combo Pack of 2 Pack Active Test Strip (50 Each) & 4...",
+        name1:"Accu-Chek Combo Pack of 2 Pack Active Test Strip (50 Each) & 4...",
         ratings:4.2,
         price_1:2298,
         price:2058,

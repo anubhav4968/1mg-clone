@@ -35,6 +35,9 @@ cards.addEventListener("click",function(){
     netbanking.style.backgroundColor ="#fff3e3";
     cod.style.backgroundColor ="#fff3e3";
     document.getElementById("append_data").innerHTML= cards_func();
+    document.getElementById("send_otp_button").addEventListener("click", function(){
+        window.location.href = "paymentOtp.html";
+    })
 });
 netbanking.addEventListener("click",function(){
    

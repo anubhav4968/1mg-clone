@@ -35,7 +35,7 @@ body{
 }
 
 #append_data{
-    padding: 2%;
+    /* padding: 2%; */
     margin-top: 5%;
     
 }
@@ -79,9 +79,7 @@ body{
 }
 
 /* address css */
-#radio1{
-    color :rgb(247, 120, 1);
-}
+
 #append_add{
     background-color: white;
     font-size: 12px;
@@ -201,4 +199,52 @@ body{
 a{
     text-decoration: none;
     color: #ff6f61;
+}
+
+
+@media only screen and (min-width:10px) and (max-width:999px){
+    #container{
+        width: 100%;
+        margin: auto;
+        display: block;
+        gap: 2%;
+        margin-bottom: 0;
+    }
+    #search_div>div{
+        display: none;
+    }
+    #right,#left{
+        width: 90%;
+        margin: auto;
+
+    }
+    #right{
+        margin-top: -10%;
+    }
+}
+
+
+@media only screen and (min-width:10px) and (max-width:767px){
+    #container{
+        width: 100%;
+        margin: auto;
+        display: block;
+        gap: 2%;
+        margin: auto;
+    }
+    #search_div>div{
+        display: none;
+    }
+    #right,#left{
+        width: 100%;
+        margin: auto;
+    }
+    #right{
+        margin-top: -10%;
+    }
+    #footer{
+        display: block;
+        margin: auto;
+        margin-top: 6%;
+    }
 }
