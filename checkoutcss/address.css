@@ -80,3 +80,25 @@ p>a{
 #append_add>div>div>label{
     font-weight: bold;
 }
+@media only screen and (min-width:10px) and (max-width:999px){
+    
+    #container{
+        margin: auto;
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+       
+    }
+    #footer{
+        margin: auto;
+        padding: 0%;
+        display: block;
+        text-align: justify;
+    }
+    #footer>div:nth-child(2){
+        width: auto;
+        text-align: justify;
+    }
+ 
+ }
+ 
