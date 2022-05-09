@@ -1,7 +1,7 @@
 
 # 1mg.com Clone
 
-Tata 1mg is a healthcare platform based in Gurgaon, India. It provides services, including e-pharmacy, diagnostics, e-consultation and health content.
+Tata 1mg is a healthcare platform based in Gurgaon, India. It provides services, including e-pharmacy, diagnostics, e-consultation and health content. Netlify Link: https://ornate-selkie-9825f4.netlify.app/
 
 
 ## Authors
