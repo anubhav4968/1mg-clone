@@ -289,3 +289,31 @@ border-radius:100%;
     margin-bottom: 10px;
     border-radius: 4px;
 }
+
+@media only screen and (min-width:10px) and (max-width:999px){
+   #navbar>div>div{
+    display: none;
+    margin: auto;
+   }
+   
+   #container{
+       margin: auto;
+       display: block;
+       width: 100%;
+      
+   }
+   #left,#right{
+       width: 100%;
+       margin-bottom: 10%;
+   }
+   #left>div{
+       display: block;
+   }
+   #send_otp_button{
+       width: 100%;
+   }
+   #append_data{
+       height: auto;
+   }
+
+}

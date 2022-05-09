@@ -169,6 +169,52 @@ margin-bottom: 3%;
     margin-bottom: 5%;
 }
 
+@media only screen and (min-width:10px) and (max-width:999px){
+    
+    #container{
+        margin: auto;
+        display: block;
+        width: 100%;
+       
+    }
+    #btns{
+        display: block;
+        margin-bottom: 0;
+    }
+    #footer{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    #footer>div{
+        
+        margin: auto;
+        width: auto;
+        text-align: justify;
+    }
+    #footer>div:nth-child(1){
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+        width: 98%;
+    }
+    #footer>div:nth-child(2){
+     
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+        width: 98%;
+    }
+    #links>a{
+        font-size: 14px;
+        margin: 5px;
+        width: auto;   
+    }
+ 
+ }
+
 
 
 
