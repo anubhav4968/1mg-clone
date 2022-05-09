@@ -9,6 +9,9 @@ body{
     justify-content: space-between;
 
 }
+button{
+    cursor: pointer;
+}
 #left{
     width: 60%;
    margin-left: 5%;

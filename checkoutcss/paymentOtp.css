@@ -85,6 +85,9 @@ input:focus{
     border: none;
     border-radius: 4px;
 }
+button{
+    cursor: pointer;
+}
 @media only screen and (min-width:10px) and (max-width:999px){
     
     #container{

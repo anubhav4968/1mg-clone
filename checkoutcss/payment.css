@@ -289,6 +289,9 @@ border-radius:100%;
     margin-bottom: 10px;
     border-radius: 4px;
 }
+button{
+    cursor: pointer;
+}
 
 @media only screen and (min-width:10px) and (max-width:999px){
    #navbar>div>div{
