@@ -30,7 +30,7 @@ Tata 1mg is a healthcare platform based in Gurgaon, India. It provides services,
 
 ## Roles & Responsibilities:
 - The Landing Page is designed & functioned by Rajan.
-- Sign up page & login page is designed & functioned by Nirbhay.
+- Sign up page & login page is designed & functioned by Nirbhay & Rajan.
 - Store & products section is designed & functioned by Anubhav.
 - Cart, Payment & Checkout pages are designed & functioned by Geeta Prakash Rana.
 - Covid19 & Ayurveda page is designed by Shivam.
